@@ -858,8 +858,59 @@ h4 {
   }
 }
 
-.galeria {
-  width: 90%;
+.mainQuienSoy section {
+  padding: 1rem;
+}
+
+.mainQuienSoy section .biografia {
+  border-bottom: 1px solid #129399;
+}
+
+.mainQuienSoy section .biografia h2 {
+  text-align: left;
+}
+
+.mainQuienSoy section h2 {
+  font-weight: bolder;
+  padding-bottom: 1rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  font-size: 2rem;
+}
+
+.mainQuienSoy section p {
+  font-size: 1rem;
+}
+
+.mainQuienSoy section p a {
+  text-decoration: none;
+  color: #129399;
+  font-weight: bolder;
+}
+
+.mainQuienSoy section p a:hover {
+  background-color: #f2b830;
+  color: #9c5513;
+  padding: .3rem;
+  border: 1px solid #f2b830;
+  border-radius: 5px;
+}
+
+.mainQuienSoy section ul li {
+  list-style: circle;
+  color: #000;
+}
+
+.mainQuienSoy section .hobbies h2 {
+  text-align: right;
+}
+
+.mainQuienSoy section .hobbies p {
+  text-align: right;
+}
+
+.mainQuienSoy section .hobbies .galeria {
+  width: 95%;
   height: auto;
   margin: auto;
   margin-bottom: 20px;
@@ -874,13 +925,13 @@ h4 {
       grid-template-areas: "foto2 foto4 foto4 foto7" "foto2 foto4 foto4 foto7" "foto1 foto1 foto3 foto6" "foto1 foto1 foto3 foto5";
 }
 
-.foto {
+.mainQuienSoy section .hobbies .galeria .foto {
   min-height: 200px;
   min-width: 200px;
   background-size: cover;
 }
 
-.foto:hover {
+.mainQuienSoy section .hobbies .galeria .foto:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 0.8s;
@@ -889,7 +940,7 @@ h4 {
           box-shadow: 5px 5px 20px 1px #000;
 }
 
-.foto1 {
+.mainQuienSoy section .hobbies .galeria .foto1 {
   background-image: url("../imágenes/amigos.jpeg");
   background-position: center;
   -ms-grid-row: 3;
@@ -899,7 +950,7 @@ h4 {
   grid-area: foto1;
 }
 
-.foto2 {
+.mainQuienSoy section .hobbies .galeria .foto2 {
   background-image: url("../imágenes/baile.jpeg");
   background-position: center;
   -ms-grid-row: 1;
@@ -908,7 +959,7 @@ h4 {
   grid-area: foto2;
 }
 
-.foto3 {
+.mainQuienSoy section .hobbies .galeria .foto3 {
   background-image: url("../imágenes/campo-de-margaritas.jpeg");
   background-position: top;
   -ms-grid-row: 3;
@@ -917,7 +968,7 @@ h4 {
   grid-area: foto3;
 }
 
-.foto4 {
+.mainQuienSoy section .hobbies .galeria .foto4 {
   background-image: url("../imágenes/comida-sana.jpeg");
   background-position: bottom;
   -ms-grid-row: 1;
@@ -927,7 +978,7 @@ h4 {
   grid-area: foto4;
 }
 
-.foto5 {
+.mainQuienSoy section .hobbies .galeria .foto5 {
   background-image: url("../imágenes/ejercicio.jpeg");
   background-position: center;
   -ms-grid-row: 4;
@@ -935,7 +986,7 @@ h4 {
   grid-area: foto5;
 }
 
-.foto6 {
+.mainQuienSoy section .hobbies .galeria .foto6 {
   background-image: url("../imágenes/familia.jpeg");
   background-position: center;
   -ms-grid-row: 3;
@@ -943,23 +994,13 @@ h4 {
   grid-area: foto6;
 }
 
-.foto7 {
+.mainQuienSoy section .hobbies .galeria .foto7 {
   background-image: url("../imágenes/naturaleza.jpeg");
   background-position: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
   grid-area: foto7;
-}
-
-h2 {
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-  font-family: 'Amaranth', sans-serif;
-  color: #f2b830;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-align: left;
 }
 
 .mainRecetas {
