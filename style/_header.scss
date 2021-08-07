@@ -1,25 +1,21 @@
 header{
     width: 100%;
     height: auto;
-    padding: $rem*2 $rem $rem*2 $rem;
+    background-image: linear-gradient(to bottom, $gradient1, $gradient2, $blanco);
+    padding: $rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     .logo{
-        height: $rem*8;
-        margin-left: $rem*3;
-        padding: $rem;
-        border: .3rem solid $turquesa;
-        border-radius: 100px;
+        height: $rem*15;
+    }
+    .titulo-nav{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .tituloPrincipal{
-        padding-bottom: $rem;
-        color: $turquesa;
-        text-shadow: $shadow $shadow $shadow $turquesa_oscuro;
-        font-family: 'Amaranth', sans-serif;
-        font-size: $rem*3;
-        font-weight: bolder;
+        font-family: 'Dancing Script', cursive;
         animation-name: titleanimation;
         animation-duration: 4s;
         animation-timing-function: ease;
@@ -31,12 +27,26 @@ header{
         100%{opacity: 1;}
     }
     #tituloIndex{
+        color: $negro;
+        font-size: $rem*2;
+        text-align: right;
+        padding-left: $rem;
+        padding-top: $rem*3;
+        padding-bottom: 0;
+    }
+    .TituloOtras{
+        color: $negro;
         font-size: $rem*4;
+        text-align: right; 
+        padding-left: $rem;
+        padding-top: $rem*3;
+        padding-bottom: 0;
     }
     nav{
         .menuNav{
             display: flex;
             list-style: none;
+            padding-top: $rem*6;
             .navItem a{
                 color: $negro;
                 text-decoration: none;

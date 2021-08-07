@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Dancing+Script&family=Nunito:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +14,9 @@ body {
 header {
   width: 100%;
   height: auto;
-  padding: 2rem 1rem 2rem 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b9f5f5), color-stop(#d4ffff), to(#fff));
+  background-image: linear-gradient(to bottom, #b9f5f5, #d4ffff, #fff);
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,20 +33,21 @@ header {
 }
 
 header .logo {
-  height: 8rem;
-  margin-left: 3rem;
-  padding: 1rem;
-  border: 0.3rem solid #129399;
-  border-radius: 100px;
+  height: 15rem;
+}
+
+header .titulo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 header .tituloPrincipal {
-  padding-bottom: 1rem;
-  color: #129399;
-  text-shadow: 0.1rem 0.1rem 0.1rem #0f2e30;
-  font-family: 'Amaranth', sans-serif;
-  font-size: 3rem;
-  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
   -webkit-animation-name: titleanimation;
           animation-name: titleanimation;
   -webkit-animation-duration: 4s;
@@ -78,7 +79,21 @@ header .tituloPrincipal {
 }
 
 header #tituloIndex {
+  color: #000;
+  font-size: 2rem;
+  text-align: right;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+header .TituloOtras {
+  color: #000;
   font-size: 4rem;
+  text-align: right;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
 }
 
 header nav .menuNav {
@@ -86,6 +101,7 @@ header nav .menuNav {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding-top: 6rem;
 }
 
 header nav .menuNav .navItem a {
