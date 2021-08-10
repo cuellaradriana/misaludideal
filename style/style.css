@@ -1222,20 +1222,62 @@ h4 {
 .mainContacto {
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
-  border-top: 1px solid #f2b830;
+  padding-bottom: 1rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(#f8ebcb), to(#fff));
+  background-image: linear-gradient(to top, #fff, #f8ebcb, #fff);
 }
 
-h2 {
+.mainContacto h2 {
+  margin-bottom: 1rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
+  font-size: 3rem;
   text-align: center;
 }
 
-#contacto {
-  width: 20%;
+.mainContacto #contacto {
+  width: 30%;
   margin: auto;
   text-align: center;
-  border: 2px dotted #9c5513;
   padding: 10px;
+}
+
+.mainContacto #contacto label {
+  font-family: 'Amaranth', sans-serif;
+  color: #129399;
+  font-size: 1.3rem;
+}
+
+.mainContacto #contacto input {
+  width: 80%;
+  border-radius: 2rem;
+  border: 1px solid #129399;
+  text-align: center;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.mainContacto #contacto #edad {
+  width: 10%;
+}
+
+.mainContacto #contacto #consulta {
+  width: 80%;
+  border-radius: 2rem;
+  border: 1px solid #129399;
+  font-family: 'Amaranth', sans-serif;
+  padding: 1rem;
+}
+
+.mainContacto #contacto .botonEnviar, .mainContacto #contacto .botonBorrar {
+  margin: 1rem;
+  background-color: #129399;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.mainContacto #contacto .botonBorrar {
+  margin: 0;
 }
 
 @media only screen and (max-width: 1020px) {

@@ -1,19 +1,56 @@
 .mainContacto{
     width: 100%;
     height: auto;
-    padding-bottom: 20px;
-    border-top: 1px solid #f2b830;
+    padding-bottom: $rem;
+    background-image: linear-gradient(to top, $blanco, $amarillo_claro, $blanco);
+    h2{
+        margin-bottom: $rem;
+        font-family: 'Amaranth', sans-serif;
+        color: $amarillo;
+        text-shadow: .1rem .1rem .1rem $marron;
+        font-size: $rem*3;
+        text-align: center;
+    }
+    #contacto{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        label{
+            font-family: 'Amaranth', sans-serif;
+            color: $turquesa;
+            font-size: $rem*1.3;
+        }
+        input{
+            width: 80%;
+            border-radius: $rem*2;
+            border: 1px solid $turquesa;
+            text-align: center;
+            font-family: 'Amaranth', sans-serif;
+        }
+        #edad{
+            width: 10%;
+        }
+        #consulta{
+            width: 80%;
+            border-radius: $rem*2;
+            border: 1px solid $turquesa;
+            font-family: 'Amaranth', sans-serif;
+            padding: $rem;
+        }
+        .botonEnviar{
+            margin:$rem;
+            background-color: $turquesa;
+            color: $blanco;
+            font-size: $rem*1.2;
+        }
+        .botonBorrar{
+            @extend .botonEnviar;
+            margin: 0;
+        }
+    }
 }
-h2{
-    text-align: center;
-}
-#contacto{
-    width: 20%;
-    margin: auto;
-    text-align: center;
-    border: 2px dotted #9c5513;
-    padding: 10px;
-}
+
 
 @media only screen and (max-width: 1020px){
     #contacto{
