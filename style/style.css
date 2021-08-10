@@ -979,37 +979,66 @@ h4 {
   }
 }
 
+.mainQuienSoy {
+  width: 90%;
+  height: auto;
+  margin: 1rem 5%;
+}
+
 .mainQuienSoy section {
   padding: 1rem;
 }
 
 .mainQuienSoy section .biografia {
-  border-bottom: 1px solid #129399;
+  margin-bottom: 1rem;
 }
 
 .mainQuienSoy section .biografia h2 {
+  margin-bottom: 1rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
+  font-size: 3rem;
   text-align: left;
 }
 
-.mainQuienSoy section h2 {
-  font-weight: bolder;
-  padding-bottom: 1rem;
-  font-family: 'Amaranth', sans-serif;
-  color: #f2b830;
-  font-size: 2rem;
+.mainQuienSoy section .biografia .contBiografia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.mainQuienSoy section p {
-  font-size: 1rem;
+.mainQuienSoy section .biografia .contBiografia .imgBiografia {
+  margin-left: 1rem;
+  height: 55vh;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.mainQuienSoy section p a {
+.mainQuienSoy section .biografia .contBiografia .imgBiografia:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem #129399;
+          box-shadow: 0.1rem 0.1rem 0.5rem #129399;
+}
+
+.mainQuienSoy section .biografia .contBiografia p {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+.mainQuienSoy section .biografia .contBiografia p a {
   text-decoration: none;
   color: #129399;
   font-weight: bolder;
 }
 
-.mainQuienSoy section p a:hover {
+.mainQuienSoy section .biografia .contBiografia p a:hover {
   background-color: #f2b830;
   color: #9c5513;
   padding: .3rem;
@@ -1017,26 +1046,29 @@ h4 {
   border-radius: 5px;
 }
 
-.mainQuienSoy section ul li {
-  list-style: circle;
-  color: #000;
-}
-
 .mainQuienSoy section .hobbies h2 {
+  margin-bottom: 1rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
+  font-size: 3rem;
   text-align: right;
 }
 
 .mainQuienSoy section .hobbies p {
-  text-align: left;
+  font-size: 1.3rem;
+}
+
+.mainQuienSoy section .hobbies ul li {
+  list-style: circle;
+  color: #000;
+  font-size: 1.3rem;
 }
 
 .mainQuienSoy section .hobbies .galeria {
   width: 95%;
   height: auto;
   margin: auto;
-  margin-bottom: 20px;
-  padding: 2%;
-  background-color: #f8ebcb;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
