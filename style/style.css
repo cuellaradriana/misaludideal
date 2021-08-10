@@ -760,23 +760,19 @@ h3.prep {
 }
 
 .mainBlog {
-  width: 95%;
+  width: 96%;
   height: auto;
-  border-top: 1px solid #f2b830;
-  margin-left: 3%;
-  margin-right: 2%;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin: 1rem 2%;
+  font-size: 1rem;
 }
 
 .mainBlog section h2 {
-  margin-left: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: 'Amaranth', sans-serif;
   color: #f2b830;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-align: left;
+  text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .mainBlog section p {

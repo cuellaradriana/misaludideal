@@ -1,20 +1,16 @@
 .mainBlog{
-    width: 95%;
+    width: 96%;
     height: auto;
-    border-top: 1px solid #f2b830;
-    margin-left: 3%;
-    margin-right: 2%;
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin: $rem 2%;
+    font-size: $rem;
     section{
         h2{
-            margin-left: $rem;
-            margin-bottom: $rem*2;
+            margin-bottom: $rem;
             font-family: 'Amaranth', sans-serif;
             color: $amarillo;
-            font-weight: bolder;
-            font-size: 2rem;
-            text-align: left;
+            text-shadow: .1rem .1rem .1rem $marron;
+            font-size: $rem*3;
+            text-align: center;
         }
         p{
             margin-bottom: 10px;
