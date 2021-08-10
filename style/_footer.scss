@@ -1,52 +1,52 @@
 footer{
     width: 100%;
-    height: 200px;
+    height: auto;
     padding-top: 20px;
-    background-color: #dbfff9;
+    background-image: linear-gradient(to top, $gradient1, $gradient2, $blanco);
     .formFooter{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 18px;
+        font-size: $rem*1.2;
         #suscripcion{
-            width: 230px;
-            height: 28px;
+            width: 16%;
+            height: 1.7rem;
             border-radius: 0px;
-            border: 1px solid #9c5513;
+            border: .5px solid $marron;
             margin: 5px;
-            font-size: 16px;
+            font-size: $rem;
             font-family: 'Nunito', sans-serif;
         }
         #enviarFooter{
-            width: 235px;
-            height: 28px;
-            border-radius: 10px;
-            border: 2px solid #f2b830;
-            background-color: #f2b830;
+            width: 16.5%;
+            height: 1.7rem;
+            border-radius: 1.5rem;
+            border: 2px solid$amarillo;
+            background-color:$amarillo;
             font-family: 'Nunito', sans-serif;
             color: #fff;
             font-weight: bolder;
-            font-size: 16px;
+            font-size: $rem;
+            transition: 1s;
         }
         #enviarFooter:hover{
-            background-color: #129399;
-            border: 2px solid #129399;
+            background-color: $turquesa;
+            border: 2px solid $turquesa;
         }
     }
     .redes{
-        margin-top: 35px;
+        margin-top: 1.5rem;
         display: flex;
         justify-content: center;
-        list-style-type: none;
         a{
-            margin: 10px;
-            padding: 5px;
+            padding: 1rem;
             text-decoration: none;
-            color: #f2b830;
-            font-size: 30px;
+            color: $amarillo;
+            font-size: 2rem;
+            transition: 1s;
         }
         a:hover{
-            color: #129399;
+            color: $turquesa;
         }
     }
 }

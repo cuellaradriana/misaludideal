@@ -245,9 +245,10 @@ header nav .menuNav .navItem a:hover {
 
 footer {
   width: 100%;
-  height: 200px;
+  height: auto;
   padding-top: 20px;
-  background-color: #dbfff9;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d2fdff), color-stop(#ddfdff), to(#fff));
+  background-image: linear-gradient(to top, #d2fdff, #ddfdff, #fff);
 }
 
 footer .formFooter {
@@ -261,29 +262,31 @@ footer .formFooter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 footer .formFooter #suscripcion {
-  width: 230px;
-  height: 28px;
+  width: 16%;
+  height: 1.7rem;
   border-radius: 0px;
-  border: 1px solid #9c5513;
+  border: 0.5px solid #9c5513;
   margin: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Nunito', sans-serif;
 }
 
 footer .formFooter #enviarFooter {
-  width: 235px;
-  height: 28px;
-  border-radius: 10px;
+  width: 16.5%;
+  height: 1.7rem;
+  border-radius: 1.5rem;
   border: 2px solid #f2b830;
   background-color: #f2b830;
   font-family: 'Nunito', sans-serif;
   color: #fff;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 footer .formFooter #enviarFooter:hover {
@@ -292,22 +295,22 @@ footer .formFooter #enviarFooter:hover {
 }
 
 footer .redes {
-  margin-top: 35px;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
 }
 
 footer .redes a {
-  margin: 10px;
-  padding: 5px;
+  padding: 1rem;
   text-decoration: none;
   color: #f2b830;
-  font-size: 30px;
+  font-size: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 footer .redes a:hover {
