@@ -14,8 +14,8 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b9f5f5), color-stop(#d4ffff), to(#fff));
-  background-image: linear-gradient(to bottom, #b9f5f5, #d4ffff, #fff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d2fdff), color-stop(#ddfdff), to(#fff));
+  background-image: linear-gradient(to bottom, #d2fdff, #ddfdff, #fff);
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
