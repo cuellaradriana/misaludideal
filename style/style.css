@@ -1129,57 +1129,64 @@ h4 {
 }
 
 .mainRecetas {
-  border-top: 1px solid #f2b830;
-  width: 94%;
+  width: 80%;
   height: auto;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-bottom: 20px;
+  margin: 1.5rem auto;
 }
 
-.primeraReceta {
+.mainRecetas .tituloReceta {
+  margin-bottom: 1rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.mainRecetas .primeraReceta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.fotoReceta {
-  width: 30%;
-  padding: 10px;
-  border: 3px solid #129399;
+.mainRecetas .primeraReceta .fotoReceta {
+  width: 40%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.fotoReceta:hover {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  -webkit-transition: 2s;
-  transition: 2s;
+.mainRecetas .primeraReceta .fotoReceta:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-.flexIngredientes {
-  margin-right: 10%;
-  margin-left: 10%;
+.mainRecetas .primeraReceta .flexIngredientes {
+  margin: 0 5%;
 }
 
-.flexIngredientes h3 {
-  font-size: 30px;
+.mainRecetas .primeraReceta .flexIngredientes h3 {
+  font-size: 3rem;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
-.flexIngredientes ol li {
-  font-size: 20px;
+.mainRecetas .primeraReceta .flexIngredientes ol li {
+  font-size: 1.4rem;
 }
 
-.flexPreparacion h3 {
-  font-size: 30px;
+.mainRecetas .flexPreparacion h3 {
+  margin-top: 1rem;
+  font-size: 3rem;
   margin-bottom: 20px;
-  margin-top: 30px;
+  font-weight: bolder;
 }
 
-.flexPreparacion p {
+.mainRecetas .flexPreparacion p {
   font-size: 20px;
   margin-bottom: 10px;
 }
