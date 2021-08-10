@@ -235,7 +235,7 @@ header .titulo-nav nav .menuNav .navItem a:hover {
 footer {
   width: 100%;
   height: auto;
-  padding-top: 20px;
+  padding-top: 2.3rem;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#d2fdff), color-stop(#ddfdff), to(#fff));
   background-image: linear-gradient(to top, #d2fdff, #ddfdff, #fff);
 }
@@ -308,7 +308,6 @@ footer .redes a:hover {
 
 @media only screen and (max-width: 1020px) {
   footer {
-    height: 12.5rem;
     padding-top: 1rem;
   }
   footer .formFooter {
@@ -335,7 +334,7 @@ footer .redes a:hover {
 
 @media only screen and (max-width: 768px) {
   footer {
-    height: 10rem;
+    height: auto;
     padding-top: 1rem;
   }
   footer .formFooter {
@@ -359,13 +358,13 @@ footer .redes a:hover {
     margin-top: 1.2rem;
   }
   footer .redes a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   footer {
-    height: 9.2rem;
+    height: auto;
   }
   footer .formFooter {
     font-size: .8rem;
@@ -380,9 +379,6 @@ footer .redes a:hover {
   footer .redes {
     padding: 0;
     margin-top: .8rem;
-  }
-  footer .redes a {
-    font-size: .8rem;
   }
 }
 
