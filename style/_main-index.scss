@@ -4,11 +4,12 @@
     margin-bottom: $rem;
     padding-top: $rem;
     .contMainAutor{
-        background-color: $amarillo_claro;
         width: 90%;
         height: 50vh;
         margin: auto;
         margin-top: $rem;
+        background-color: $amarillo_claro;
+        // box-shadow: .1rem .1rem .5rem $marron;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -27,6 +28,7 @@
             grid-area: texto;
             margin: 0;
             margin-left: $rem;
+            font-family: 'Amaranth', sans-serif;
             font-size: $rem*1.3;
             text-align: center;
             font-style: italic;
@@ -38,31 +40,38 @@
             font-size: $rem;
             background-color: $marron;
             text-decoration: none;
+            text-shadow: 1px 1px 2px $negro;
             color: $blanco;
-            font-weight: bolder;
-            border-radius: 20px;
+            font-family: 'Amaranth', sans-serif;
+            border-radius: 1.3rem;
             box-shadow: .1rem .1rem $rem rgb(95, 95, 95);
+            transition: 1s;
+        }
+        .botonAutor:hover{
+            background-color: $amarillo;
         }
         .imgAutor{
             grid-area: foto;
-            height: 70%;
+            height: 40vh;
             border-radius: 30%;
             margin: auto;
         }
     }
     .contMain{
-        margin-top: $rem;
+        margin-top: $rem*2;
         display: flex;
         .artMain{
             width: 50%;
+            margin: .5rem;
+            // border: 1px solid $turquesa;
+            box-shadow: .2rem .2rem $rem/2 darkgray;
             h2{
-                margin-left: $rem;
-                margin-bottom: $rem*2;
+                margin-bottom: $rem;
                 font-family: 'Amaranth', sans-serif;
                 color: $amarillo;
-                font-weight: bolder;
+                text-shadow: .1rem .1rem .1rem $marron;
                 font-size: 2rem;
-                text-align: left;
+                text-align: center;
             }
             .artFormato{
                 display: flex;
@@ -70,22 +79,43 @@
                     height: 12.5rem;
                     margin: $rem/2;
                     padding: $rem/3;
-                    border: 1px solid $turquesa;
                 }
                 .artReceta{
                     display: flex;
                     flex-direction: column;
-                    margin-left: $rem*2;                
+                    margin-left: $rem*2;  
+                    h3{
+                        font-family: 'Amaranth', sans-serif;
+                        color: $marron;
+                        font-weight: bolder;
+                        font-size: 1.8rem;
+                        text-align: left;
+                        margin-bottom: $rem;
+                        margin-top: $rem;
+                    }              
                     .ingReceta{
                         font-size: 1.2rem;
                     }
                 }
+            }
+            h3.prep{
+                margin-left: 10px;
+                font-weight: bolder;
             }
             .textoArt{
                 margin: $rem;
                 margin-top: 0;
                 font-size: 1.2rem;
                 text-align: left;
+                a{
+                    text-decoration: none;
+                    color: $marron;
+                    font-family: 'Amaranth', sans-serif;
+                    transition: .5s;
+                }
+                a:hover{
+                    background-color: $amarillo_claro;
+                }
             }
         }
     }
@@ -94,8 +124,7 @@
 h3{
     font-family: 'Amaranth', sans-serif;
     color: $marron;
-    text-shadow: .1rem .1rem .1rem $amarillo;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.8rem;
     text-align: left;
     margin-bottom: $rem;
