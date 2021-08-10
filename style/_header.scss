@@ -13,55 +13,55 @@ header{
     .titulo-nav{
         display: flex;
         flex-direction: column-reverse;
-    }
-    .tituloPrincipal{
-        font-family: 'Dancing Script', cursive;
-        animation-name: titleanimation;
-        animation-duration: 4s;
-        animation-timing-function: ease;
-        animation-delay:0s;
-        animation-iteration-count: 1;
-    }
-    @keyframes titleanimation {
-        0%{opacity: 0;}
-        100%{opacity: 1;}
-    }
-    #tituloIndex{
-        color: $negro;
-        font-size: $rem*2;
-        text-align: right;
-        padding-left: $rem;
-        padding-top: $rem*3;
-        padding-bottom: 0;
-    }
-    .tituloOtras{
-        color: $negro;
-        font-size: $rem*3.5;
-        text-align: center; 
-        padding-left: $rem;
-        padding-top: $rem;
-        padding-bottom: 0;
-    }
-    nav{
-        .menuNav{
-            display: flex;
-            list-style: none;
-            padding-top: $rem*6;
-            .navItem a{
-                color: $negro;
-                text-decoration: none;
-                font-weight: bolder;
-                font-size: $rem*1.5;
-                padding: $rem;
-            }
-            .focusNav a{
-            color: $amarillo;
-            }
-            .navItem a:hover{
-            border-radius: $rem;
-            background-color: $amarillo;
-            opacity: 0.8;
-            color: $marron;
+        .tituloPrincipal{
+            font-family: 'Dancing Script', cursive;
+            animation-name: titleanimation;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-delay:0s;
+            animation-iteration-count: 1;
+        }
+        @keyframes titleanimation {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        #tituloIndex{
+            color: $negro;
+            font-size: $rem*2;
+            text-align: right;
+            padding-left: $rem;
+            padding-top: $rem*3;
+            padding-bottom: 0;
+        }
+        .tituloOtras{
+            color: $negro;
+            font-size: $rem*3.5;
+            text-align: center; 
+            padding-left: $rem;
+            padding-top: $rem;
+            padding-bottom: 0;
+        }
+        nav{
+            .menuNav{
+                display: flex;
+                list-style: none;
+                padding-top: $rem*6;
+                .navItem a{
+                    color: $negro;
+                    text-decoration: none;
+                    font-weight: bolder;
+                    font-size: $rem*1.5;
+                    padding: $rem;
+                }
+                .focusNav a{
+                color: $amarillo;
+                }
+                .navItem a:hover{
+                border-radius: $rem;
+                background-color: $amarillo;
+                opacity: 0.8;
+                color: $marron;
+                }
             }
         }
     }
@@ -69,28 +69,27 @@ header{
 
 @media only screen and (max-width: 1020px){
     header{
-        padding: $rem;
         .logo{
-            height: $rem*6;
-            margin-left: $rem;
-            padding: .4rem;
-            border: .2rem solid $turquesa;
+            height: $rem*10;
         }
-        .tituloPrincipal{
-            padding-bottom: .5rem;
-            font-size: $rem*2;
-        }
-        #tituloIndex{
-            font-size: $rem*3;
-        }
-        nav{
-            .menuNav{
-                .navItem a{
-                    font-size: $rem;
-                    padding: .5rem;
-                }
-                .navItem a:hover{
-                border-radius: .5rem;
+        .titulo-nav{
+            display: flex;
+            flex-direction: column-reverse;
+            #tituloIndex{
+                font-size: $rem*1.5;
+            }
+            .tituloOtras{
+                font-size: $rem*2.5;
+            }
+            nav{
+                .menuNav{
+                    display: flex;
+                    list-style: none;
+                    padding-top: $rem*5;
+                    .navItem a{
+                        font-size: $rem;
+                        padding: $rem/2;
+                    }
                 }
             }
         }
@@ -98,30 +97,24 @@ header{
 }
 @media only screen and (max-width: 768px){
     header{
-        padding: $rem;
-        flex-flow: row wrap;
-        justify-content: space-around;
         .logo{
-            height: $rem*6;
-            margin-left: 0rem;
-            padding: .4rem;
-            border: .2rem solid $turquesa;
+            height: $rem*8;
         }
-        .tituloPrincipal{
-            padding-bottom: 0rem;
-            font-size: $rem*2.3;
-        }
-        #tituloIndex{
-            font-size: $rem*3;
-        }
-        nav{
-            .menuNav{
-                .navItem a{
-                    font-size: $rem;
-                    padding: .5rem;
-                }
-                .navItem a:hover{
-                border-radius: .5rem;
+        .titulo-nav{
+            #tituloIndex{
+                font-size: $rem;
+                padding-top: $rem*2;
+            }
+            .tituloOtras{
+                font-size: $rem*2;
+            }
+            nav{
+                .menuNav{
+                    padding-top: $rem*4;
+                    .navItem a{
+                        font-size: $rem*1;
+                        padding: $rem/2;
+                    }
                 }
             }
         }
@@ -129,38 +122,28 @@ header{
 }
 @media only screen and (max-width: 480px){
     header{
+        flex-direction: column;
         padding: $rem;
-        display: flex;
-        flex-flow: column;
         .logo{
             height: $rem*7;
-            margin-left: 0rem;
-            padding: .5rem;
-            border: .25rem solid $turquesa;
+            margin: $rem;
         }
-        .tituloPrincipal{
-            padding-bottom: 0rem;
-            color: $turquesa;
-            text-shadow: 1px 1px 1px $turquesa_oscuro;
-            font-size: $rem*2;
-        }
-        #tituloIndex{
-            font-size: $rem*3;
-            text-shadow: 2px 2px 1px $turquesa_oscuro;
-        }
-        nav{
-            .menuNav{
-                padding:0;
-                margin-bottom: 0;
-                .navItem a{
-                    font-size: $rem;
-                    padding:.5rem;
-                }
-                .focusNav a{
-                color: $amarillo;
-                }
-                .navItem a:hover{
-                border-radius: .5rem;
+        .titulo-nav{
+            #tituloIndex{
+                font-size: $rem;
+                padding-top: 0;
+            }
+            .tituloOtras{
+                font-size: $rem*1.5;
+                padding-top: 0;
+            }
+            nav{
+                .menuNav{
+                    padding-top: $rem;
+                    .navItem a{
+                        font-size: $rem;
+                        padding: $rem/2;
+                    }
                 }
             }
         }
@@ -168,23 +151,27 @@ header{
 }
 @media only screen and (max-width: 380px){
     header{
+        flex-direction: column;
+        padding: $rem/2;
         .logo{
             height: $rem*6;
-            padding: .4rem;
-            border: .15rem solid $amarillo;
+            margin: $rem/2;
         }
-        .tituloPrincipal{
-            font-size: $rem*1.5;
-        }
-        #tituloIndex{
-            font-size: $rem*2.5;
-            text-shadow: 1px 1px 1px $turquesa_oscuro;
-        }
-        nav{
-            .menuNav{
-                .navItem a{
-                    font-size: .8rem;
-                    padding:.3rem;
+        .titulo-nav{
+            #tituloIndex{
+                font-size: $rem;
+                padding-top: 0;
+            }
+            .tituloOtras{
+                display: none;
+            }
+            nav{
+                .menuNav{
+                    padding-top:0;
+                    .navItem a{
+                        font-size: .8rem;
+                        padding: $rem/3;
+                    }
                 }
             }
         }

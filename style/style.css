@@ -46,7 +46,7 @@ header .titulo-nav {
           flex-direction: column-reverse;
 }
 
-header .tituloPrincipal {
+header .titulo-nav .tituloPrincipal {
   font-family: 'Dancing Script', cursive;
   -webkit-animation-name: titleanimation;
           animation-name: titleanimation;
@@ -78,7 +78,7 @@ header .tituloPrincipal {
   }
 }
 
-header #tituloIndex {
+header .titulo-nav #tituloIndex {
   color: #000;
   font-size: 2rem;
   text-align: right;
@@ -87,7 +87,7 @@ header #tituloIndex {
   padding-bottom: 0;
 }
 
-header .tituloOtras {
+header .titulo-nav .tituloOtras {
   color: #000;
   font-size: 3.5rem;
   text-align: center;
@@ -96,7 +96,7 @@ header .tituloOtras {
   padding-bottom: 0;
 }
 
-header nav .menuNav {
+header .titulo-nav nav .menuNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,7 @@ header nav .menuNav {
   padding-top: 6rem;
 }
 
-header nav .menuNav .navItem a {
+header .titulo-nav nav .menuNav .navItem a {
   color: #000;
   text-decoration: none;
   font-weight: bolder;
@@ -112,11 +112,11 @@ header nav .menuNav .navItem a {
   padding: 1rem;
 }
 
-header nav .menuNav .focusNav a {
+header .titulo-nav nav .menuNav .focusNav a {
   color: #f2b830;
 }
 
-header nav .menuNav .navItem a:hover {
+header .titulo-nav nav .menuNav .navItem a:hover {
   border-radius: 1rem;
   background-color: #f2b830;
   opacity: 0.8;
@@ -124,122 +124,111 @@ header nav .menuNav .navItem a:hover {
 }
 
 @media only screen and (max-width: 1020px) {
-  header {
-    padding: 1rem;
-  }
   header .logo {
-    height: 6rem;
-    margin-left: 1rem;
-    padding: .4rem;
-    border: 0.2rem solid #129399;
+    height: 10rem;
   }
-  header .tituloPrincipal {
-    padding-bottom: .5rem;
-    font-size: 2rem;
+  header .titulo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  header #tituloIndex {
-    font-size: 3rem;
+  header .titulo-nav #tituloIndex {
+    font-size: 1.5rem;
   }
-  header nav .menuNav .navItem a {
+  header .titulo-nav .tituloOtras {
+    font-size: 2.5rem;
+  }
+  header .titulo-nav nav .menuNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding-top: 5rem;
+  }
+  header .titulo-nav nav .menuNav .navItem a {
     font-size: 1rem;
-    padding: .5rem;
-  }
-  header nav .menuNav .navItem a:hover {
-    border-radius: .5rem;
+    padding: 0.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    padding: 1rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   header .logo {
-    height: 6rem;
-    margin-left: 0rem;
-    padding: .4rem;
-    border: 0.2rem solid #129399;
+    height: 8rem;
   }
-  header .tituloPrincipal {
-    padding-bottom: 0rem;
-    font-size: 2.3rem;
-  }
-  header #tituloIndex {
-    font-size: 3rem;
-  }
-  header nav .menuNav .navItem a {
+  header .titulo-nav #tituloIndex {
     font-size: 1rem;
-    padding: .5rem;
+    padding-top: 2rem;
   }
-  header nav .menuNav .navItem a:hover {
-    border-radius: .5rem;
+  header .titulo-nav .tituloOtras {
+    font-size: 2rem;
+  }
+  header .titulo-nav nav .menuNav {
+    padding-top: 4rem;
+  }
+  header .titulo-nav nav .menuNav .navItem a {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   header {
-    padding: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
   }
   header .logo {
     height: 7rem;
-    margin-left: 0rem;
-    padding: .5rem;
-    border: 0.25rem solid #129399;
+    margin: 1rem;
   }
-  header .tituloPrincipal {
-    padding-bottom: 0rem;
-    color: #129399;
-    text-shadow: 1px 1px 1px #0f2e30;
-    font-size: 2rem;
-  }
-  header #tituloIndex {
-    font-size: 3rem;
-    text-shadow: 2px 2px 1px #0f2e30;
-  }
-  header nav .menuNav {
-    padding: 0;
-    margin-bottom: 0;
-  }
-  header nav .menuNav .navItem a {
+  header .titulo-nav #tituloIndex {
     font-size: 1rem;
-    padding: .5rem;
+    padding-top: 0;
   }
-  header nav .menuNav .focusNav a {
-    color: #f2b830;
+  header .titulo-nav .tituloOtras {
+    font-size: 1.5rem;
+    padding-top: 0;
   }
-  header nav .menuNav .navItem a:hover {
-    border-radius: .5rem;
+  header .titulo-nav nav .menuNav {
+    padding-top: 1rem;
+  }
+  header .titulo-nav nav .menuNav .navItem a {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 
 @media only screen and (max-width: 380px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.5rem;
+  }
   header .logo {
     height: 6rem;
-    padding: .4rem;
-    border: 0.15rem solid #f2b830;
+    margin: 0.5rem;
   }
-  header .tituloPrincipal {
-    font-size: 1.5rem;
+  header .titulo-nav #tituloIndex {
+    font-size: 1rem;
+    padding-top: 0;
   }
-  header #tituloIndex {
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 1px #0f2e30;
+  header .titulo-nav .tituloOtras {
+    display: none;
   }
-  header nav .menuNav .navItem a {
+  header .titulo-nav nav .menuNav {
+    padding-top: 0;
+  }
+  header .titulo-nav nav .menuNav .navItem a {
     font-size: .8rem;
-    padding: .3rem;
+    padding: 0.33333rem;
   }
 }
 
