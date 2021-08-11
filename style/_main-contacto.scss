@@ -53,26 +53,82 @@
 
 
 @media only screen and (max-width: 1020px){
-    #contacto{
-        width: 35%;
-        font-size: $rem;
+    .mainContacto{
+        h2{
+            font-size: $rem*2.5;
+        }
+        #contacto{
+            width: 35%;
+            label{
+                font-size: $rem;
+            }
+            input{
+                width: 90%;
+                border-radius: $rem*1.5;
+            }
+            #edad{
+                width: 15%;
+            }
+            #consulta{
+                width: 90%;
+                border-radius: $rem*1.5;
+            }
+            .botonEnviar{
+                font-size: $rem;
+            }
+            .botonBorrar{
+                margin: 0;
+            }
+        }
     }
 }
 @media only screen and (max-width: 768px){
-    #contacto{
-        width: 45%;
-        font-size: .8rem;
+    .mainContacto{
+        h2{
+            font-size: $rem*2;
+        }
+        #contacto{
+            width: 40%;
+            label{
+                font-size: $rem;
+            }
+            input{
+                width: 90%;
+                border-radius: $rem*1.3;
+            }
+            #edad{
+                width: 15%;
+            }
+            #consulta{
+                width: 90%;
+                border-radius: $rem*1.3;
+            }
+            .botonEnviar{
+                font-size: $rem;
+            }
+            .botonBorrar{
+                margin: 0;
+            }
+        }
     }
 }
 @media only screen and (max-width: 480px){
-    #contacto{
-        width: 55%;
-        font-size: .7rem;
+    .mainContacto{
+        h2{
+            font-size: $rem*2;
+        }
+        #contacto{
+            width: 60%;
+        }
     }
 }
 @media only screen and (max-width: 380px){
-    #contacto{
-        width: 65%;
-        font-size: .5rem;
+    .mainContacto{
+        h2{
+            font-size: $rem*1.8;
+        }
+        #contacto{
+            width: 80%;
+        }
     }
 }

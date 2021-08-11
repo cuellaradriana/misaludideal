@@ -1566,30 +1566,78 @@ h4 {
 }
 
 @media only screen and (max-width: 1020px) {
-  #contacto {
+  .mainContacto h2 {
+    font-size: 2.5rem;
+  }
+  .mainContacto #contacto {
     width: 35%;
+  }
+  .mainContacto #contacto label {
     font-size: 1rem;
+  }
+  .mainContacto #contacto input {
+    width: 90%;
+    border-radius: 1.5rem;
+  }
+  .mainContacto #contacto #edad {
+    width: 15%;
+  }
+  .mainContacto #contacto #consulta {
+    width: 90%;
+    border-radius: 1.5rem;
+  }
+  .mainContacto #contacto .botonEnviar, .mainContacto #contacto .botonBorrar {
+    font-size: 1rem;
+  }
+  .mainContacto #contacto .botonBorrar {
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #contacto {
-    width: 45%;
-    font-size: .8rem;
+  .mainContacto h2 {
+    font-size: 2rem;
+  }
+  .mainContacto #contacto {
+    width: 40%;
+  }
+  .mainContacto #contacto label {
+    font-size: 1rem;
+  }
+  .mainContacto #contacto input {
+    width: 90%;
+    border-radius: 1.3rem;
+  }
+  .mainContacto #contacto #edad {
+    width: 15%;
+  }
+  .mainContacto #contacto #consulta {
+    width: 90%;
+    border-radius: 1.3rem;
+  }
+  .mainContacto #contacto .botonEnviar, .mainContacto #contacto .botonBorrar {
+    font-size: 1rem;
+  }
+  .mainContacto #contacto .botonBorrar {
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #contacto {
-    width: 55%;
-    font-size: .7rem;
+  .mainContacto h2 {
+    font-size: 2rem;
+  }
+  .mainContacto #contacto {
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 380px) {
-  #contacto {
-    width: 65%;
-    font-size: .5rem;
+  .mainContacto h2 {
+    font-size: 1.8rem;
+  }
+  .mainContacto #contacto {
+    width: 80%;
   }
 }
 
