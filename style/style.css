@@ -842,6 +842,13 @@ footer .redes a:hover {
   color: #129399;
 }
 
+.mainBlog section article h3 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #9c5513;
+}
+
 .mainBlog section article .avena {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +906,9 @@ h4 {
   .mainBlog section p {
     margin-bottom: .5rem;
   }
+  .mainBlog section article h3 {
+    font-size: 1.8rem;
+  }
   .imgBlog {
     width: 28%;
   }
@@ -935,6 +945,9 @@ h4 {
   .mainBlog section p {
     margin-bottom: .5rem;
   }
+  .mainBlog section article h3 {
+    font-size: 1.5rem;
+  }
   .mainBlog section article .avena {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -966,6 +979,9 @@ h4 {
   .mainBlog section h2 {
     font-size: 1.5rem;
     text-align: center;
+  }
+  .mainBlog section article h3 {
+    font-size: 1.3rem;
   }
   .mainBlog section article .avena {
     display: -webkit-box;
