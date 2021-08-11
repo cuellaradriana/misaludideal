@@ -714,6 +714,9 @@ footer .redes a:hover {
     -webkit-box-shadow: inherit;
             box-shadow: inherit;
   }
+  .mainIndex .contMainAutor .imgAutor {
+    height: 35vh;
+  }
   .mainIndex .contMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1266,7 +1269,7 @@ h4 {
         flex-wrap: wrap;
   }
   .mainQuienSoy section .biografia .contBiografia .imgBiografia {
-    height: 80vh;
+    height: 50vh;
   }
   .mainQuienSoy section .biografia .contBiografia p {
     font-size: 1.2rem;
@@ -1306,7 +1309,7 @@ h4 {
     font-size: 2rem;
   }
   .mainQuienSoy section .biografia .contBiografia .imgBiografia {
-    height: 90vh;
+    height: 50vh;
   }
   .mainQuienSoy section .biografia .contBiografia p {
     font-size: 1rem;
