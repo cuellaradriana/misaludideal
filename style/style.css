@@ -806,6 +806,9 @@ footer .redes a:hover {
     -webkit-box-shadow: inherit;
             box-shadow: inherit;
   }
+  .mainIndex .contMainAutor .imgAutor {
+    height: 35vh;
+  }
   .mainIndex .contMain .artMain .artFormato .imgArt {
     height: 15rem;
     margin-left: 1.5rem;
