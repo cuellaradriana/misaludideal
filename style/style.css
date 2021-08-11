@@ -1256,9 +1256,11 @@ h4 {
 }
 
 .mainRecetas .primeraReceta .flexIngredientes h3 {
+  font-family: 'Amaranth', sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: bolder;
+  color: #9c5513;
 }
 
 .mainRecetas .primeraReceta .flexIngredientes ol li {
@@ -1266,6 +1268,8 @@ h4 {
 }
 
 .mainRecetas .flexPreparacion h3 {
+  font-family: 'Amaranth', sans-serif;
+  color: #9c5513;
   margin-top: 1rem;
   font-size: 3rem;
   margin-bottom: 20px;
@@ -1275,6 +1279,106 @@ h4 {
 .mainRecetas .flexPreparacion p {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .mainRecetas .tituloReceta {
+    font-size: 3.5rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes h3 {
+    font-size: 2.5rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes ol li {
+    font-size: 1.2rem;
+  }
+  .mainRecetas .flexPreparacion h3 {
+    font-size: 2.5rem;
+  }
+  .mainRecetas .flexPreparacion p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainRecetas .tituloReceta {
+    font-size: 3rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes h3 {
+    font-size: 2rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes ol li {
+    font-size: 1rem;
+  }
+  .mainRecetas .flexPreparacion h3 {
+    font-size: 2rem;
+  }
+  .mainRecetas .flexPreparacion p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mainRecetas .tituloReceta {
+    font-size: 2.5rem;
+  }
+  .mainRecetas .primeraReceta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainRecetas .primeraReceta .fotoReceta {
+    width: 80%;
+    margin-left: 0;
+    margin: auto;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes {
+    margin-top: 1rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes h3 {
+    font-size: 1.5rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes ol li {
+    font-size: 1rem;
+  }
+  .mainRecetas .flexPreparacion h3 {
+    font-size: 1.5rem;
+  }
+  .mainRecetas .flexPreparacion p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .mainRecetas .tituloReceta {
+    font-size: 2rem;
+  }
+  .mainRecetas .primeraReceta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainRecetas .primeraReceta .fotoReceta {
+    width: 80%;
+    margin-left: 0;
+    margin: auto;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes {
+    margin-top: 1rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes h3 {
+    font-size: 1.3rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes ol li {
+    font-size: 1rem;
+  }
+  .mainRecetas .flexPreparacion h3 {
+    font-size: 1.3rem;
+  }
+  .mainRecetas .flexPreparacion p {
+    font-size: 1rem;
+  }
 }
 
 .mainContacto {

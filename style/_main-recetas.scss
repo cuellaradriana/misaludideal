@@ -24,9 +24,11 @@
         .flexIngredientes{
             margin: 0 5%;
             h3{
+                font-family: 'Amaranth', sans-serif;
                 font-size: $rem*3;
                 margin-bottom: 20px;
                 font-weight: bolder;
+                color: $marron;
             }
             ol{
                 li{
@@ -37,9 +39,12 @@
     }
     .flexPreparacion{
         h3{
+            font-family: 'Amaranth', sans-serif;
+            color: $marron;
             margin-top: $rem;
             font-size: $rem*3;
-            margin-bottom: 20px;                font-weight: bolder;
+            margin-bottom: 20px;                
+            font-weight: bolder;
         }
         p{
             font-size: 20px;
@@ -48,4 +53,128 @@
     }
 }
 
+@media only screen and (max-width: 1020px){
+    .mainRecetas{
+        .tituloReceta{
+            font-size: $rem*3.5;
+        }
+        .primeraReceta{
+            .flexIngredientes{
+                h3{
+                    font-size: $rem*2.5;
+                }
+                ol{
+                    li{
+                        font-size: $rem*1.2;
+                    }
+                }
+            }
+        }
+        .flexPreparacion{
+            h3{
+                font-size: $rem*2.5;
+            }
+            p{
+                font-size: $rem*1.2;
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 768px){
+    .mainRecetas{
+        .tituloReceta{
+            font-size: $rem*3;
+        }
+        .primeraReceta{
+            .flexIngredientes{
+                h3{
+                    font-size: $rem*2;
+                }
+                ol{
+                    li{
+                        font-size: $rem;
+                    }
+                }
+            }
+        }
+        .flexPreparacion{
+            h3{
+                font-size: $rem*2;
+            }
+            p{
+                font-size: $rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .mainRecetas{
+        .tituloReceta{
+            font-size: $rem*2.5;
+        }
+        .primeraReceta{
+            flex-direction: column;
+            .fotoReceta{
+                width: 80%;
+                margin-left: 0;
+                margin: auto;
+            }
+            .flexIngredientes{
+                margin-top: $rem;
+                h3{
+                    font-size: $rem*1.5;
+                }
+                ol{
+                    li{
+                        font-size: $rem;
+                    }
+                }
+            }
+        }
+        .flexPreparacion{
+            h3{
+                font-size: $rem*1.5;
+            }
+            p{
+                font-size: $rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .mainRecetas{
+        .tituloReceta{
+            font-size: $rem*2;
+        }
+        .primeraReceta{
+            flex-direction: column;
+            .fotoReceta{
+                width: 80%;
+                margin-left: 0;
+                margin: auto;
+            }
+            .flexIngredientes{
+                margin-top: $rem;
+                h3{
+                    font-size: $rem*1.3;
+                }
+                ol{
+                    li{
+                        font-size: $rem;
+                    }
+                }
+            }
+        }
+        .flexPreparacion{
+            h3{
+                font-size: $rem*1.3;
+            }
+            p{
+                font-size: $rem;
+            }
+        }
+    }
+}
