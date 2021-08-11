@@ -192,8 +192,7 @@ header .titulo-nav nav .menuNav .navItem a:hover {
     padding-top: 0;
   }
   header .titulo-nav .tituloOtras {
-    font-size: 1.5rem;
-    padding-top: 0;
+    display: none;
   }
   header .titulo-nav nav .menuNav {
     padding-top: 1rem;
@@ -699,7 +698,7 @@ footer .redes a:hover {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .mainIndex .contMainAutor {
     height: auto;
     display: -webkit-box;
@@ -726,7 +725,7 @@ footer .redes a:hover {
             box-shadow: inherit;
   }
   .mainIndex .contMainAutor .imgAutor {
-    height: 30vh;
+    height: 28vh;
   }
   .mainIndex .contMain {
     -webkit-box-orient: vertical;
