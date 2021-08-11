@@ -249,6 +249,10 @@
 @media only screen and (max-width: 480px){
     .mainIndex{
         .contMainAutor{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: $rem;
             .tituloAutor{
                 font-size: $rem;
                 margin-bottom: 0;
@@ -263,7 +267,7 @@
                 box-shadow: inherit;
             }
             .imgAutor{
-                height: 35vh;
+                height: 30vh;
             }
         }
         .contMain{

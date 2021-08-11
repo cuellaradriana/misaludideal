@@ -700,6 +700,17 @@ footer .redes a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .mainIndex .contMainAutor {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
   .mainIndex .contMainAutor .tituloAutor {
     font-size: 1rem;
     margin-bottom: 0;
@@ -715,7 +726,7 @@ footer .redes a:hover {
             box-shadow: inherit;
   }
   .mainIndex .contMainAutor .imgAutor {
-    height: 35vh;
+    height: 30vh;
   }
   .mainIndex .contMain {
     -webkit-box-orient: vertical;
