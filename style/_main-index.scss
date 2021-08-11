@@ -120,20 +120,6 @@
         }
     }
 }
-
-h3{
-    font-family: 'Amaranth', sans-serif;
-    color: $marron;
-    font-weight: bolder;
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: $rem;
-    margin-top: $rem;
-}
-h3.prep{
-    margin-left: 10px;
-}
-
 .carousel-inner, .carousel-item{
     height: 39rem !important;
     width: 96% !important;
@@ -143,11 +129,25 @@ h3.prep{
 
 @media only screen and (max-width: 1020px){
     .mainIndex{
+        .contMainAutor{
+            .tituloAutor{
+                font-size: $rem*2;
+            }
+            .textoAutor{
+                font-size: $rem;
+            }
+            .botonAutor{
+                padding: .3rem .5rem;
+                font-size: .8rem;
+                border-radius: 1rem;
+            }
+        }
         .contMain{
             display: flex;
             flex-direction: column;
             .artMain{
-                width: 100%;
+                width: 90%;
+                margin: auto;
                 h2{
                     margin-bottom: $rem;
                     color: $amarillo;
@@ -164,78 +164,110 @@ h3.prep{
                     .artReceta{
                         display: flex;
                         flex-direction: column;
-                        margin-left: $rem*4;                
+                        margin-left: $rem*4;  
+                        h3{
+                            font-size: 1.5rem;
+                        }              
                         .ingReceta{
                             font-size: 1.2rem;
                         }
                     }
                 }
+                h3.prep{
+                    font-family: 'Amaranth', sans-serif;
+                    color: $marron;
+                    font-weight: bolder;
+                    font-size: 1.5rem;
+                    text-align: left;
+                    margin-bottom: $rem;
+                    margin-top: $rem;
+                    margin-left: 2rem;
+                }
             }
         }
-    }
-    
-    h3{
-        margin-left: $rem;
-    }
-    h3.prep{
-        margin-left: $rem;
     }
     .segundoArt{
         padding-top: 2rem;
     }
     .carousel-inner, .carousel-item{
         height: auto !important;
-        width: 96% !important;
-        margin-left: 2%;
-        margin-right: 2%;
     }
 }
+
 @media only screen and (max-width: 768px){
     .mainIndex{
+        .contMainAutor{
+            .tituloAutor{
+                font-size: $rem*1.5;
+            }
+            .textoAutor{
+                font-size: .8rem;
+            }
+        }
         .contMain{
+            display: flex;
+            flex-direction: column;
             .artMain{
+                width: 90%;
+                margin: auto;
                 h2{
-                    font-size: 1.8rem;
+                    padding-top: $rem;
+                    font-size: 1.5rem;
+                    text-shadow: inherit;
+                    font-weight: bolder;
                 }
                 .artFormato{
+                    display: flex;
+                    justify-content: center;
                     .imgArt{
-                        height: 14rem;
+                        height: 15rem;
                     }
                     .artReceta{
-                        margin-left: $rem*2;                
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: $rem*2;  
+                        h3{
+                            font-size: 1.3rem;
+                        }              
                         .ingReceta{
-                            font-size: 1rem;
+                            font-size: $rem;
                         }
                     }
                 }
                 .textoArt{
-                    font-size: 1rem;
+                    font-size: $rem;
+                    margin-left: 2rem;
                 }
             }
         }
-    }    
-    h3{
-        margin-left: $rem;
-        font-size: 1.5rem;
-    }
-    h3.prep{
-        margin-left: $rem;
     }
     .segundoArt{
-        padding-top: .5rem;
-    }
-    .carousel-inner, .carousel-item{
-        height: auto !important;
-        width: 96% !important;
-        margin-left: 2%;
-        margin-right: 2%;
+        padding-top: 0;
     }
 }
+
 @media only screen and (max-width: 480px){
     .mainIndex{
+        .contMainAutor{
+            .tituloAutor{
+                font-size: $rem;
+                margin-bottom: 0;
+            }
+            .textoAutor{
+                font-size: .8rem;
+            }
+            .botonAutor{
+                padding: .3rem .3rem;
+                font-size: .7rem;
+                border-radius: 1rem;
+                box-shadow: inherit;
+            }
+        }
         .contMain{
             flex-direction: column;
+            margin-top: 0;
             .artMain{
+                box-shadow: inherit;
                 width: 100%;
                 h2{
                     margin-bottom: $rem;
@@ -281,8 +313,29 @@ h3.prep{
         margin-right: 2%;
     }
 }
+
 @media only screen and (max-width: 380px){
     .mainIndex{
+        .contMainAutor{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: $rem;
+            .tituloAutor{
+                font-size: $rem;
+                margin-bottom: 0;
+            }
+            .textoAutor{
+                font-size: .8rem;
+            }
+            .botonAutor{
+                margin-top: .5rem;
+                padding: .3rem .3rem;
+                font-size: .7rem;
+                border-radius: 1rem;
+                box-shadow: inherit;
+            }
+        }
         .contMain{
             .artMain{
                 .artFormato{
