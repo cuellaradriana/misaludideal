@@ -121,3 +121,146 @@
         }
     }    
 }
+
+@media only screen and (max-width: 1020px){
+    .mainQuienSoy{
+        section{
+            .biografia{
+                h2{
+                font-size: $rem*2.5;
+                }
+                .contBiografia{
+                    .imgBiografia{
+                        height: 80vh;
+                    }
+                    p{
+                        font-size: $rem;
+                    }
+                }
+            }
+            .hobbies{
+                h2{
+                    font-size: $rem*2.5;
+                }
+                p{
+                    font-size: $rem;
+                }
+                ul{
+                    li{
+                        font-size: $rem;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mainQuienSoy{
+        width: 94%;
+        margin: $rem 3%;
+        section{
+            .biografia{
+                h2{
+                font-size: $rem*2.5;
+                font-weight: bolder;
+                text-align: center;
+                }
+                .contBiografia{
+                    flex-wrap: wrap;
+                    .imgBiografia{
+                        height: 80vh;
+                    }
+                    p{
+                        font-size: $rem*1.2;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .hobbies{
+                h2{
+                    font-size: $rem*2.5;
+                    text-align: center;
+                }
+                p{
+                    font-size: $rem*1.2;
+                }
+                ul{
+                    li{
+                        list-style: circle;
+                        color: #000;
+                        font-size: $rem*1.2;
+                    }
+                }
+                .galeria{
+                    width: 95%;
+                    height: auto;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    .foto{
+                        height: 100vh;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .mainQuienSoy{
+        section{
+            .biografia{
+                h2{
+                font-size: $rem*2;
+                }
+                .contBiografia{
+                    .imgBiografia{
+                        height: 90vh;
+                    }
+                    p{
+                        font-size: $rem;
+                    }
+                }
+            }
+            .hobbies{
+                h2{
+                    font-size: $rem*2;
+                }
+                p{
+                    font-size: $rem;
+                }
+                ul{
+                    li{
+                        font-size: $rem;
+                    }
+                }
+                .galeria{
+                    display: none;
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .mainQuienSoy{
+        section{
+            .biografia{
+                h2{
+                font-size: $rem*1.8;
+                }
+                .contBiografia{
+                    .imgBiografia{
+                        height: 80vh;
+                    }
+                }
+            }
+            .hobbies{
+                h2{
+                    font-size: $rem*1.8;
+                }
+            }
+        }    
+    }
+}

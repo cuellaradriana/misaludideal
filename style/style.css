@@ -1230,6 +1230,113 @@ h4 {
   grid-area: foto7;
 }
 
+@media only screen and (max-width: 1020px) {
+  .mainQuienSoy section .biografia h2 {
+    font-size: 2.5rem;
+  }
+  .mainQuienSoy section .biografia .contBiografia .imgBiografia {
+    height: 80vh;
+  }
+  .mainQuienSoy section .biografia .contBiografia p {
+    font-size: 1rem;
+  }
+  .mainQuienSoy section .hobbies h2 {
+    font-size: 2.5rem;
+  }
+  .mainQuienSoy section .hobbies p {
+    font-size: 1rem;
+  }
+  .mainQuienSoy section .hobbies ul li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainQuienSoy {
+    width: 94%;
+    margin: 1rem 3%;
+  }
+  .mainQuienSoy section .biografia h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .mainQuienSoy section .biografia .contBiografia {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainQuienSoy section .biografia .contBiografia .imgBiografia {
+    height: 80vh;
+  }
+  .mainQuienSoy section .biografia .contBiografia p {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  .mainQuienSoy section .hobbies h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .mainQuienSoy section .hobbies p {
+    font-size: 1.2rem;
+  }
+  .mainQuienSoy section .hobbies ul li {
+    list-style: circle;
+    color: #000;
+    font-size: 1.2rem;
+  }
+  .mainQuienSoy section .hobbies .galeria {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainQuienSoy section .hobbies .galeria .foto {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mainQuienSoy section .biografia h2 {
+    font-size: 2rem;
+  }
+  .mainQuienSoy section .biografia .contBiografia .imgBiografia {
+    height: 90vh;
+  }
+  .mainQuienSoy section .biografia .contBiografia p {
+    font-size: 1rem;
+  }
+  .mainQuienSoy section .hobbies h2 {
+    font-size: 2rem;
+  }
+  .mainQuienSoy section .hobbies p {
+    font-size: 1rem;
+  }
+  .mainQuienSoy section .hobbies ul li {
+    font-size: 1rem;
+  }
+  .mainQuienSoy section .hobbies .galeria {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .mainQuienSoy section .biografia h2 {
+    font-size: 1.8rem;
+  }
+  .mainQuienSoy section .biografia .contBiografia .imgBiografia {
+    height: 80vh;
+  }
+  .mainQuienSoy section .hobbies h2 {
+    font-size: 1.8rem;
+  }
+}
+
 .mainRecetas {
   width: 80%;
   height: auto;
