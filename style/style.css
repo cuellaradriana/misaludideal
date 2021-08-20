@@ -1402,7 +1402,7 @@ h4 {
   color: #9c5513;
 }
 
-.mainRecetas .primeraReceta .flexIngredientes ol li {
+.mainRecetas .primeraReceta .flexIngredientes ul li {
   font-size: 1.4rem;
 }
 
@@ -1427,7 +1427,7 @@ h4 {
   .mainRecetas .primeraReceta .flexIngredientes h3 {
     font-size: 2.5rem;
   }
-  .mainRecetas .primeraReceta .flexIngredientes ol li {
+  .mainRecetas .primeraReceta .flexIngredientes ul li {
     font-size: 1.2rem;
   }
   .mainRecetas .flexPreparacion h3 {
@@ -1445,7 +1445,7 @@ h4 {
   .mainRecetas .primeraReceta .flexIngredientes h3 {
     font-size: 2rem;
   }
-  .mainRecetas .primeraReceta .flexIngredientes ol li {
+  .mainRecetas .primeraReceta .flexIngredientes ul li {
     font-size: 1rem;
   }
   .mainRecetas .flexPreparacion h3 {
@@ -1477,7 +1477,7 @@ h4 {
   .mainRecetas .primeraReceta .flexIngredientes h3 {
     font-size: 1.5rem;
   }
-  .mainRecetas .primeraReceta .flexIngredientes ol li {
+  .mainRecetas .primeraReceta .flexIngredientes ul li {
     font-size: 1rem;
   }
   .mainRecetas .flexPreparacion h3 {
@@ -1509,7 +1509,7 @@ h4 {
   .mainRecetas .primeraReceta .flexIngredientes h3 {
     font-size: 1.3rem;
   }
-  .mainRecetas .primeraReceta .flexIngredientes ol li {
+  .mainRecetas .primeraReceta .flexIngredientes ul li {
     font-size: 1rem;
   }
   .mainRecetas .flexPreparacion h3 {
