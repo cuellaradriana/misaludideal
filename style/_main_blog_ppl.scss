@@ -1,0 +1,34 @@
+.mainBlogPrincipal{
+    width: 90%;
+    margin: auto;
+    margin-top: $size3;
+    margin-bottom: $size3;
+    .card{
+        background-color: $color8;
+        img{
+            height: $supersize*3;
+        }
+        border: 1px solid $color5;
+        h5{
+            font-family: 'Amaranth', sans-serif;
+            font-weight: bolder;
+            color: $color4;
+            text-shadow: 1px 1px 1px $color5;
+            font-size: $size2;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+        }
+        button{
+            margin-left: 90%;
+            border: 1px solid $color3;
+            background-color: $color6;
+            text-decoration: none;
+            a{                
+                text-decoration: none;
+                font-family: 'Amaranth', sans-serif;
+                color: $color3;
+            }
+        }
+    }
+}

@@ -1,30 +1,70 @@
 .mainBlog{
     width: 96%;
     height: auto;
-    margin: $rem 2%;
-    font-size: $rem;
+    margin: $size1 2%;
+    font-size: $size1;
+    .fecha{
+        text-align: right;
+        font-family: 'Amaranth', sans-serif;
+    }
+    button{
+        margin-left: 80%;
+        border: 1px solid $color3;
+        background-color: $color6;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            font-family: 'Amaranth', sans-serif;
+            color: $color3;
+        }
+    }
     section{
         h2{
-            margin-bottom: $rem;
+            margin-bottom: $size1;
             font-family: 'Amaranth', sans-serif;
-            color: $amarillo;
-            text-shadow: .1rem .1rem .1rem $marron;
-            font-size: $rem*3;
+            color: $color4;
+            text-shadow: .1rem .1rem .1rem $color5;
+            font-size: $size3;
             text-align: center;
         }
         p{
             margin-bottom: 10px;
             em{
                 font-weight: bolder;
-                color: #129399;
+                color: $color3;
             }
+        }
+        .contenedorBlogSuper{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            .imgBlogSuper{
+                height: $supersize;
+                background-position: center;
+                background-size: cover;
+            }
+            .item1{
+                background-image: url('../imágenes/barriguita_llena.jpg');
+                width: $supersize*2.5;
+            }
+            .item2{
+                background-image: url('../imágenes/leer_etiquetas.jpg');
+                width: $supersize*4;
+            }
+            .item3{
+                background-image: url('../imágenes/lista_de_super.jpg');
+                width: $supersize*5;
+            }
+        }
+        .contenedorReverso{
+            flex-direction: row-reverse;
         }
         article{
             h3{
                 font-family: 'Amaranth', sans-serif;
-                font-size: $rem*2;
+                font-size: $size2;
                 margin-bottom: 5px;
-                color: $marron;
+                color: $color5;
             }
             .avena{
                 display: flex;
@@ -56,17 +96,18 @@
 }
 h4{
     font-family: 'Amaranth', sans-serif;
-    font-size: 20px;
+    font-size: $size1*1.25;
     margin-bottom: 5px;
-    color: $marron;
+    color: $color5;
 }
+
 
 @media only screen and (max-width: 1020px){
     .mainBlog{
         width: 98%;
         margin-left: 1%;
         margin-right: 1%;
-        font-size: 1rem;
+        font-size: $size1;
         section{
             h2{
                 margin-bottom: .5rem;
@@ -76,7 +117,7 @@ h4{
             }
             article{
                 h3{
-                    font-size: $rem*1.8;
+                    font-size: $size1*1.8;
                 }
             }
         }
@@ -98,7 +139,7 @@ h4{
         margin-left: 1%;
     }
     h4{
-        font-size: 1.5rem;
+        font-size: $size3/2;
     }
 }
 @media only screen and (max-width: 768px){
@@ -106,20 +147,20 @@ h4{
         width: 98%;
         margin-left: 1%;
         margin-right: 1%;
-        font-size: .8rem;
+        font-size: $size1*0.8;
         section{
             h2{
                 margin-bottom: 0;
-                font-size: 1.5rem;
+                font-size: $size3/2;
                 text-align: center;
                 padding: 0;
             }
             p{
-                margin-bottom: .5rem;
+                margin-bottom: $size1/2;
             }
             article{
                 h3{
-                    font-size: $rem*1.5;
+                    font-size: $size3/2;
                 }
                 .avena{
                     justify-content: space-evenly;
@@ -133,7 +174,7 @@ h4{
             }
         }
         h4{
-            font-size: 1rem;
+            font-size: $size1;
         }
     }
     .imgBlog{
@@ -143,15 +184,15 @@ h4{
 }
 @media only screen and (max-width: 480px){
     .mainBlog{
-        font-size: .8rem;
+        font-size: $size1*0.8;
         section{
             h2{
-                font-size: 1.5rem;
+                font-size: $size3/2;
                 text-align: center;
             }
             article{
                 h3{
-                    font-size: $rem*1.3;
+                    font-size: $size1*1.3;
                 }
                 .avena{
                     display: flex;
@@ -173,33 +214,33 @@ h4{
     }
     .imgBlog{
         display: inherit;
-        height: 17rem;
+        height: $size1*17;
         width: auto;
-        padding: 1rem;
+        padding: $size1;
         padding-bottom: 0;
     }
     .composicion{
         width: 100%;
-        padding: 1rem;
+        padding: $size1;
         padding-bottom: 0;
     }
     .beneficios{
         width: 100%;
-        padding: 1rem;
+        padding: $size1;
         padding-bottom: 0;
     }
     .usos{
         width: 100%;
-        padding: 1rem;
+        padding: $size1;
         padding-bottom: 0;
     }
 }
 @media only screen and (max-width: 380px){
     .imgBlog{
         display: inherit;
-        height: 14rem;
+        height: $size2*7;
         width: auto;
-        padding: 1rem;
+        padding: $size1;
         padding-bottom: 0;
     }
 }

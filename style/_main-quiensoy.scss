@@ -1,17 +1,17 @@
 .mainQuienSoy{
     width: 90%;
     height: auto;
-    margin: $rem 5%;
+    margin: $size1 5%;
     section{
-        padding: $rem;
+        padding: $size1;
         .biografia{
-            margin-bottom: $rem;
+            margin-bottom: $size1;
             h2{
-            margin-bottom: $rem;
+            margin-bottom: $size1;
             font-family: 'Amaranth', sans-serif;
-            color: $amarillo;
-            text-shadow: .1rem .1rem .1rem $marron;
-            font-size: $rem*3;
+            color: $color4;
+            text-shadow: .1rem .1rem .1rem $color5;
+            font-size: $size3;
             text-align: left;
             }
             .contBiografia{
@@ -19,27 +19,27 @@
                 flex-wrap: nowrap;
                 justify-content: space-evenly;
                 .imgBiografia{
-                    margin-left: $rem;
+                    margin-left: $size1;
                     height: 55vh;
                     transition: 1s;
                 }
                 .imgBiografia:hover{
                     transform: scale(1.1);
-                    box-shadow: .1rem .1rem .5rem $turquesa;
+                    box-shadow: .1rem .1rem .5rem $color3;
                 }
                 p{
-                    font-size: $rem*1.3;
-                    margin-left: $rem*2;
+                    font-size: $size1*1.3;
+                    margin-left: $size2;
                     a{
                         text-decoration: none;
-                        color: $turquesa;
+                        color: $color3;
                         font-weight: bolder;
                     }
                     a:hover{
-                        background-color: $amarillo;
-                        color: $marron;
+                        background-color: $color4;
+                        color: $color5;
                         padding: .3rem;
-                        border: 1px solid $amarillo;
+                        border: 1px solid $color4;
                         border-radius: 5px;
                     }
                 }
@@ -47,21 +47,21 @@
         }
         .hobbies{
             h2{
-                margin-bottom: $rem;
+                margin-bottom: $size1;
                 font-family: 'Amaranth', sans-serif;
-                color: $amarillo;
-                text-shadow: .1rem .1rem .1rem $marron;
-                font-size: $rem*3;
+                color: $color4;
+                text-shadow: .1rem .1rem .1rem $color5;
+                font-size: $size3;
                 text-align: right;
             }
             p{
-                font-size: $rem*1.3;
+                font-size: $size1*1.3;
             }
             ul{
                 li{
                     list-style: circle;
-                    color: #000;
-                    font-size: $rem*1.3;
+                    color: $color1;
+                    font-size: $size1*1.3;
                 }
             }
             .galeria{
@@ -80,7 +80,7 @@
                 .foto:hover{
                     transform: scale(1.2);
                     transition: 0.8s;
-                    box-shadow: 5px 5px 20px 1px #000;
+                    box-shadow: 5px 5px 20px 1px $color1;
                 }
                 .foto1{ 
                     background-image: url('../imágenes/amigos.jpeg');
@@ -127,27 +127,27 @@
         section{
             .biografia{
                 h2{
-                font-size: $rem*2.5;
+                font-size: $size2*1.5;
                 }
                 .contBiografia{
                     .imgBiografia{
                         height: 80vh;
                     }
                     p{
-                        font-size: $rem;
+                        font-size: $size1;
                     }
                 }
             }
             .hobbies{
                 h2{
-                    font-size: $rem*2.5;
+                    font-size: $size2*1.5;
                 }
                 p{
-                    font-size: $rem;
+                    font-size: $size1;
                 }
                 ul{
                     li{
-                        font-size: $rem;
+                        font-size: $size1;
                     }
                 }
             }
@@ -158,11 +158,11 @@
 @media only screen and (max-width: 768px){
     .mainQuienSoy{
         width: 94%;
-        margin: $rem 3%;
+        margin: $size1 3%;
         section{
             .biografia{
                 h2{
-                font-size: $rem*2.5;
+                font-size: $size2*1.5;
                 font-weight: bolder;
                 text-align: center;
                 }
@@ -172,24 +172,24 @@
                         height: 50vh;
                     }
                     p{
-                        font-size: $rem*1.2;
+                        font-size: $size1*1.2;
                         margin-left: 0;
                     }
                 }
             }
             .hobbies{
                 h2{
-                    font-size: $rem*2.5;
+                    font-size: $size2*1.5;
                     text-align: center;
                 }
                 p{
-                    font-size: $rem*1.2;
+                    font-size: $size1*1.2;
                 }
                 ul{
                     li{
                         list-style: circle;
-                        color: #000;
-                        font-size: $rem*1.2;
+                        color: $color1;
+                        font-size: $size1*1.2;
                     }
                 }
                 .galeria{
@@ -212,27 +212,27 @@
         section{
             .biografia{
                 h2{
-                font-size: $rem*2;
+                font-size: $size2;
                 }
                 .contBiografia{
                     .imgBiografia{
                         height: 40vh;
                     }
                     p{
-                        font-size: $rem;
+                        font-size: $size1;
                     }
                 }
             }
             .hobbies{
                 h2{
-                    font-size: $rem*2;
+                    font-size: $size2;
                 }
                 p{
-                    font-size: $rem;
+                    font-size: $size1;
                 }
                 ul{
                     li{
-                        font-size: $rem;
+                        font-size: $size1;
                     }
                 }
                 .galeria{
@@ -248,7 +248,7 @@
         section{
             .biografia{
                 h2{
-                font-size: $rem*1.8;
+                font-size: $size1*1.8;
                 }
                 .contBiografia{
                     .imgBiografia{
@@ -258,7 +258,7 @@
             }
             .hobbies{
                 h2{
-                    font-size: $rem*1.8;
+                    font-size: $size1*1.8;
                 }
             }
         }    

@@ -1,106 +1,106 @@
 footer{
     width: 100%;
     height: auto;
-    padding-top: $rem+1.3;
-    background-image: linear-gradient(to top, $gradient1, $gradient2, $blanco);
+    padding-top: $size1+1.3;
+    background-image: linear-gradient(to top, $color6, $color7, $color2);
     .formFooter{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: $rem*1.2;
+        font-size: $size1*1.2;
         #suscripcion{
             width: 16%;
             height: 1.7rem;
             border-radius: 0px;
-            border: .5px solid $marron;
+            border: .5px solid $color5;
             margin: 5px;
-            font-size: $rem;
+            font-size: $size1;
             font-family: 'Nunito', sans-serif;
         }
         #enviarFooter{
             width: 16.5%;
             height: 1.7rem;
             border-radius: 1.5rem;
-            border: 2px solid$amarillo;
-            background-color:$amarillo;
+            border: 2px solid $color4;
+            background-color: $color4;
             font-family: 'Nunito', sans-serif;
-            color: #fff;
+            color: $color2;
             font-weight: bolder;
-            font-size: $rem;
+            font-size: $size1;
             transition: 1s;
         }
         #enviarFooter:hover{
-            background-color: $turquesa;
-            border: 2px solid $turquesa;
+            background-color: $color3;
+            border: 2px solid $color3;
         }
     }
     .redes{
-        margin-top: 1.5rem;
+        margin-top: $size1*1.5;
         display: flex;
         justify-content: center;
         a{
-            padding: 1rem;
+            padding: $size1;
             text-decoration: none;
-            color: $amarillo;
-            font-size: 2rem;
+            color: $color4;
+            font-size: $size2;
             transition: 1s;
         }
         a:hover{
-            color: $turquesa;
+            color: $color3;
         }
     }
 }
 
 @media only screen and (max-width: 1020px){
     footer{
-        padding-top: $rem;
+        padding-top: $size1;
         .formFooter{
-            font-size: $rem;
+            font-size: $size1;
             #suscripcion{
-                width: 14rem;
-                height: 1.75rem;
-                margin: .3rem;
-                font-size: $rem;
-                margin-bottom: .5rem;
+                width: $size2*7;
+                height: $size1*1.75;
+                margin: $size1*0.3;
+                font-size: $size1;
+                margin-bottom: $size1*0.5;
             }
             #enviarFooter{
-                width: 14.2rem;
-                height: 1.75rem;
+                width: $size2*7.1;
+                height: $size1*1.75;
                 border-radius: 10px;
-                font-size: $rem;
+                font-size: $size1;
             }
         }
         .redes{
             padding: 0;
-            margin-top: 1.6rem;
+            margin-top: $size1*1.6;
         }
     }
 }
 @media only screen and (max-width: 768px){
     footer{
         height: auto;
-        padding-top: $rem;
+        padding-top: $size1;
         .formFooter{
-            font-size: .8rem;
+            font-size: $size1*0.8;
             #suscripcion{
-                width: 12rem;
-                height: 1.5rem;
-                margin: .3rem;
-                font-size: .8rem;
-                margin-bottom: .5rem;
+                width: $size3*4;
+                height: $size1*1.5;
+                margin: $size1*0.3;
+                font-size: $size1*0.8;
+                margin-bottom: $size1*0.5;
             }
             #enviarFooter{
-                width: 12.2rem;
-                height: 1.5rem;
+                width: $size2*6.1;
+                height: $size3/2;
                 border-radius: 10px;
-                font-size: .8rem;
+                font-size: $size1*0.8;
             }
         }
         .redes{
             padding: 0;
-            margin-top: 1.2rem;
+            margin-top: $size1*1.2;
             a{
-                font-size: $rem*1.5;
+                font-size: $size3/2;
             }
         }
     }
@@ -109,19 +109,19 @@ footer{
     footer{
         height: auto;
         .formFooter{
-            font-size: .8rem;
+            font-size: $size1*0.8;
             #suscripcion{
-                width: 10rem;
-                margin-bottom: .3rem;
+                width: $size2*5;
+                margin-bottom: $size1*0.3;
             }
             #enviarFooter{
-                width: 10rem;
+                width: $size2*5;
 
             }
         }
         .redes{
             padding: 0;
-            margin-top: .8rem; 
+            margin-top: $size1*0.8; 
         }
     }
 }

@@ -1,0 +1,36 @@
+.mainRecetasPrincipal{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: $size2;
+    .card{
+        width: 45%;
+        margin-bottom: $size2;
+        .card-img{
+            background-image: url("../imágenes/WhatsApp\ Image\ 2021-06-24\ at\ 20.04.25.jpeg") !important;
+            background-position: center;
+            background-size: cover;
+        }
+        .card-title{
+            font-family: 'Amaranth', sans-serif;
+            font-weight: bolder;
+            color: $color1;
+            text-shadow: 1px 1px 10px $color2;
+        }
+        .card-text{
+            font-family: 'Amaranth', sans-serif;
+            color: $color2;
+            text-shadow: 1px 1px 5px $color1;
+        }
+        .btn-primary{
+            font-family: 'Amaranth', sans-serif;
+            background-color: $color4;
+            border: none;
+            color: $color5;
+            box-shadow: 2px 2px 5px $color1 ;
+        }
+    }
+}

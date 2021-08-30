@@ -1,65 +1,252 @@
-.paginaError{
-    background-color: $turquesa-claro;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    .error{
-        height: 15rem;
-        width: 12rem;
-        text-align: center;
-        padding-top: 2rem;
-        background-image: url(../imágenes/lluvia.png);
-        background-position: center;
-        background-size: cover;
-        font-size: $rem*5;
-        color: $amarillo;
-        font-weight: bolder;
-        font-family: "Amaranth", sans-serif;
-        text-shadow: .1rem .1rem .1rem $blanco;
-    }
-    .contenedor__error{
-        display: flex;
-        flex-wrap: nowrap;
-        height: auto;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 5rem;
-        margin-left: 10rem;
-        margin-right: 1rem;
-        .imagen__error{
-            height: 25rem;
+.bodyError{
+    background-color: $color6;
+    .paginaError{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        .error{
+            height: $supersize;
+            width: $size3*4;
+            margin-top: $size3;
+            margin-left: 27rem;
+            margin-bottom: 0;
+            text-align: center;
+            padding-top: $size2;
+            background-image: url(../imágenes/lluvia.png);
+            background-position: center;
+            background-size: cover;
+            font-size: $size1*5;
+            color: $color4;
+            font-weight: bolder;
+            font-family: "Amaranth", sans-serif;
+            text-shadow: .1rem .1rem .1rem $color2;
         }
-        .subcontenedor__error{
-            display: grid;
-            place-items: center;
-            .pageNotFound{
-                font-size: 4rem;
-                font-weight: bold;
-                font-family: 'Amaranth', sans-serif;
-                color: $turquesa;
-                text-shadow: .1rem .1rem .1rem $negro;
-                padding: 3rem;
+        .contenedor__error{
+            display: flex;
+            flex-wrap: nowrap;
+            height: auto;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: $size1*5;
+            margin-left: $size2*5;
+            margin-right: $size1;
+            .imagen__error{
+                height: 25rem;
             }
-            .explanationError{
-                font-size: 2rem;
-                font-weight: bolder;
-                font-family: 'Nunito', sans-serif;
-                color: $negro;
-                text-shadow: inherit;
-                text-align: center;
-                padding: 0rem;
-                padding-bottom: 3rem;
+            .subcontenedor__error{
+                display: grid;
+                place-items: center;
+                .pageNotFound{
+                    font-size: $size3*1.5;
+                    font-weight: bold;
+                    font-family: 'Amaranth', sans-serif;
+                    color: $color3;
+                    text-shadow: .1rem .1rem .1rem $color1;
+                    padding: $size3;
+                }
+                .explanationError{
+                    font-size: $size2;
+                    font-weight: bolder;
+                    font-family: 'Nunito', sans-serif;
+                    color: $color1;
+                    text-shadow: inherit;
+                    text-align: center;
+                    padding: 0rem;
+                    padding-bottom: $size3;
+                }
+                .buttonError{
+                    color: $color2;
+                    background-color: $color4;
+                    border: inherit;
+                    border-radius: .3rem;
+                    font-family: 'Amaranth', sans-serif;;
+                    font-size: $size3/2;
+                    padding: 0.5rem;
+                    box-shadow: .1rem .1rem .5rem $color5;
+                }
+            }   
+        }
+    }
+}
+@media only screen and (max-width: 1020px){
+    .bodyError{
+        .paginaError{
+            height: auto;
+            width: 100%;
+            .error{
+                height: $size3*4;
+                width: $size3*3;
+                margin-top: $size2;
+                margin-left: 20rem;
+                padding-top: $size2;
+                font-size: $size3;
+                color: $color4;
             }
-            .buttonError{
-                color: $blanco;
-                background-color: $amarillo;
-                border: inherit;
-                border-radius: .3rem;
-                font-family: 'Amaranth', sans-serif;;
-                font-size: 1.5rem;
-                padding: 0.5rem;
-                box-shadow: .1rem .1rem .5rem $marron;
+            .contenedor__error{
+                .imagen__error{
+                    height: 20rem;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        font-size: $size3;
+                        padding: $size2;
+                    }
+                    .explanationError{
+                        font-size: $size3/2;
+                        padding-bottom: $size2;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .bodyError{
+        .paginaError{
+            .error{
+                margin-left: 16rem;
+            }
+            .contenedor__error{
+                margin-bottom: $size2*2;
+                margin-left: $size2*3;
+                margin-right: $size1;
+                .imagen__error{
+                    height: 18rem;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        font-size: $size2*1.5;
+                        padding: $size2;
+                    }
+                    .explanationError{
+                        font-size: $size1*1.3;
+                        padding-bottom: $size2;
+                    }
+                    .buttonError{
+                        font-size: $size1;
+                    }
+                }   
+            }
+        }
+    }
+}
+@media only screen and (max-width: 780px) {
+    .bodyError{
+        .paginaError{
+            height: auto;
+            .error{
+                margin-left: 13rem;
+            }
+            .contenedor__error{
+                margin-bottom: $size3;
+                margin-left: $size2*2;
+                margin-right: $size1;
+                .imagen__error{
+                    height: $supersize;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        font-size: $size2;
+                        padding: $size3/2;
+                    }
+                    .explanationError{
+                        font-size: $size1;
+                        padding-bottom: $size3/2;
+                    }
+                    .buttonError{
+                        font-size: $size1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 620px) {
+    .bodyError{
+        .paginaError{
+            .error{
+                height: $size3*2;
+                width: $size3*2;
+                margin-top: $size1;
+                margin-left: 10rem;
+                padding-top: $size1;
+                font-size: $size3/2;
+                color: $color4;
+            }
+            .contenedor__error{
+                .imagen__error{
+                    height: $size3*4;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        font-size: $size3/2;
+                        padding: $size1;
+                    }
+                    .explanationError{
+                        font-size: $size1;
+                        padding-bottom: $size3/2;
+                    }
+                    .buttonError{
+                        font-size: $size1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .bodyError{
+        .paginaError{
+            .error{
+                margin-left: 0;
+            }
+            .contenedor__error{
+                margin-bottom: $size1;
+                margin-left: $size2;
+                margin-right: $size1;
+                .imagen__error{
+                    height: $size3*3;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        padding: .8rem;
+                    }
+                    .explanationError{
+                        padding-bottom: $size1;
+                    }
+                    .buttonError{
+                        padding: .3rem;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .bodyError{
+        .paginaError{
+            .contenedor__error{
+                margin-left: $size1;
+                .imagen__error{
+                    height: $size3*2;
+                }
+                .subcontenedor__error{
+                    .pageNotFound{
+                        font-size: $size1*1.3;
+                        text-align: center;
+                        padding: .4rem;
+                    }
+                    .explanationError{
+                        padding-bottom: .8rem;
+                    }
+                    .buttonError{
+                        padding: .2rem;
+                        font-size: .6rem;
+                    }
+                }
             }
         }
     }
