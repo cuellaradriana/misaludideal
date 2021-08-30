@@ -510,6 +510,9 @@ footer .redes a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mainIndex .contMain .artMain .artFormato .imgArt {
@@ -539,13 +542,18 @@ footer .redes a:hover {
   margin-top: 1rem;
 }
 
-.mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+.mainIndex .contMain .artMain .artFormato .artReceta .ingReceta li {
   font-size: 1.2rem;
+  list-style-position: outside;
 }
 
 .mainIndex .contMain .artMain h3.prep {
   margin-left: 10px;
+  font-family: 'Amaranth', sans-serif;
+  color: #9c5513;
   font-weight: bolder;
+  font-size: 1.8rem;
+  text-align: left;
 }
 
 .mainIndex .contMain .artMain .textoArt {
@@ -555,9 +563,14 @@ footer .redes a:hover {
   text-align: left;
 }
 
+.mainIndex .contMain .artMain .textoArt em {
+  font-size: 1.2rem;
+}
+
 .mainIndex .contMain .artMain .textoArt a {
   text-decoration: none;
   color: #9c5513;
+  font-size: 1.2rem;
   font-family: 'Amaranth', sans-serif;
   -webkit-transition: .5s;
   transition: .5s;
@@ -896,8 +909,22 @@ footer .redes a:hover {
           box-shadow: 2px 2px 5px #000;
 }
 
+@media only screen and (max-width: 650px) {
+  .mainRecetasPrincipal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainRecetasPrincipal .card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 .mainRecetas {
-  width: 90%;
+  width: 95%;
   height: auto;
   margin: 1.5rem auto;
 }
@@ -1033,7 +1060,7 @@ footer .redes a:hover {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .mainRecetas .tituloReceta {
     font-size: 3rem;
   }
@@ -1055,6 +1082,9 @@ footer .redes a:hover {
     font-size: 1.5rem;
   }
   .mainRecetas .primeraReceta .flexIngredientes ul li {
+    font-size: 1rem;
+  }
+  .mainRecetas .primeraReceta .flexIngredientes .ingReceta li {
     font-size: 1rem;
   }
   .mainRecetas .flexPreparacion h3 {
@@ -1126,7 +1156,6 @@ footer .redes a:hover {
 }
 
 .mainBlogPrincipal .card button {
-  margin-left: 90%;
   border: 1px solid #129399;
   background-color: #d2fdff;
   text-decoration: none;
@@ -1151,7 +1180,8 @@ footer .redes a:hover {
 }
 
 .mainBlog button {
-  margin-left: 80%;
+  margin-left: 83%;
+  margin-bottom: 1rem;
   border: 1px solid #129399;
   background-color: #d2fdff;
   text-decoration: none;
@@ -1163,12 +1193,12 @@ footer .redes a:hover {
   color: #129399;
 }
 
-.mainBlog section h2 {
+.mainBlog section .tituloBlog {
   margin-bottom: 1rem;
   font-family: 'Amaranth', sans-serif;
   color: #f2b830;
   text-shadow: 0.1rem 0.1rem 0.1rem #9c5513;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1200,17 +1230,17 @@ footer .redes a:hover {
 
 .mainBlog section .contenedorBlogSuper .item1 {
   background-image: url("../imágenes/barriguita_llena.jpg");
-  width: 37.5rem;
+  width: 100%;
 }
 
 .mainBlog section .contenedorBlogSuper .item2 {
   background-image: url("../imágenes/leer_etiquetas.jpg");
-  width: 60rem;
+  width: 100%;
 }
 
 .mainBlog section .contenedorBlogSuper .item3 {
   background-image: url("../imágenes/lista_de_super.jpg");
-  width: 75rem;
+  width: 150%;
 }
 
 .mainBlog section .contenedorReverso {
@@ -1227,19 +1257,7 @@ footer .redes a:hover {
   color: #9c5513;
 }
 
-.mainBlog section article .avena {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mainBlog section article .huevos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mainBlog section article .lentejas {
+.mainBlog section article .avena, .mainBlog section article .huevos, .mainBlog section article .lentejas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1249,17 +1267,7 @@ footer .redes a:hover {
   width: 25%;
 }
 
-.composicion {
-  width: 25%;
-  margin-left: 2%;
-}
-
-.beneficios {
-  width: 25%;
-  margin-left: 2%;
-}
-
-.usos {
+.composicion, .beneficios, .usos {
   width: 25%;
   margin-left: 2%;
 }
@@ -1278,8 +1286,11 @@ h4 {
     margin-right: 1%;
     font-size: 1rem;
   }
-  .mainBlog section h2 {
-    margin-bottom: .5rem;
+  .mainBlog section .contenedorBlogSuper .item2 {
+    width: 150%;
+  }
+  .mainBlog section .contenedorBlogSuper .item3 {
+    width: 200%;
   }
   .mainBlog section p {
     margin-bottom: .5rem;
@@ -1290,15 +1301,7 @@ h4 {
   .imgBlog {
     width: 28%;
   }
-  .composicion {
-    width: 24%;
-    margin-left: 1%;
-  }
-  .beneficios {
-    width: 24%;
-    margin-left: 1%;
-  }
-  .usos {
+  .composicion, .beneficios, .usos {
     width: 24%;
     margin-left: 1%;
   }
@@ -1307,18 +1310,27 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .mainBlog {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 0.8rem;
   }
-  .mainBlog section h2 {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0;
+  .mainBlog button {
+    margin-left: 80%;
+  }
+  .mainBlog section .contenedorBlogSuper .item1 {
+    width: 150%;
+  }
+  .mainBlog section .contenedorBlogSuper .item2 {
+    width: 220%;
+  }
+  .mainBlog section .contenedorBlogSuper .item3 {
+    width: 270%;
+  }
+  .mainBlog section .tituloBlog {
+    font-size: 1.8rem;
   }
   .mainBlog section p {
     margin-bottom: 0.5rem;
@@ -1326,17 +1338,7 @@ h4 {
   .mainBlog section article h3 {
     font-size: 1.5rem;
   }
-  .mainBlog section article .avena {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .mainBlog section article .huevos {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .mainBlog section article .lentejas {
+  .mainBlog section article .avena, .mainBlog section article .huevos, .mainBlog section article .lentejas {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1345,14 +1347,112 @@ h4 {
     font-size: 1rem;
   }
   .imgBlog {
-    width: 31%;
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainBlog {
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+  .mainBlog section .contenedorBlogSuper .imgBlogSuper {
+    height: 10rem;
+  }
+  .mainBlog section .contenedorBlogSuper .item2 {
+    width: 160%;
+  }
+  .mainBlog section .contenedorBlogSuper .item3 {
+    width: 200%;
+  }
+  .mainBlog section .tituloBlog {
+    font-size: 1.5rem;
+  }
+  .mainBlog section p {
+    margin-bottom: 0.5rem;
+  }
+  .mainBlog section article h3 {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #f2b830;
+    font-weight: bolder;
+  }
+  .mainBlog section article .avena, .mainBlog section article .huevos, .mainBlog section article .lentejas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainBlog h4 {
+    font-size: 1rem;
+  }
+  .imgBlog {
+    display: block;
+    width: 80%;
+  }
+  .composicion, .beneficios, .usos {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainBlog button {
+    margin-left: 70%;
+  }
+  .mainBlog section .contenedorBlogSuper .imgBlogSuper {
+    height: 10rem;
+  }
+  .mainBlog section .contenedorBlogSuper .item2 {
+    width: 250%;
+  }
+  .mainBlog section .contenedorBlogSuper .item3 {
+    width: 300%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .mainBlog {
     font-size: 0.8rem;
+  }
+  .mainBlog button {
+    margin-left: 68%;
+  }
+  .mainBlog section .contenedorBlogSuper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .mainBlog section .contenedorBlogSuper p {
+    position: relative;
+    z-index: 10;
+  }
+  .mainBlog section .contenedorBlogSuper .imgBlogSuper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: .3;
+  }
+  .mainBlog section .contenedorBlogSuper .item1 {
+    width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainBlog section .contenedorBlogSuper .item2 {
+    width: 15rem;
+    height: 15rem;
+  }
+  .mainBlog section .contenedorBlogSuper .item3 {
+    width: 15rem;
+    height: 18rem;
   }
   .mainBlog section h2 {
     font-size: 1.5rem;
@@ -1369,9 +1469,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .mainBlog section article .huevos {
     display: -webkit-box;
@@ -1381,9 +1478,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .mainBlog section article .lentejas {
     display: -webkit-box;
@@ -1393,9 +1487,6 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .imgBlog {
     display: inherit;
@@ -1422,8 +1513,10 @@ h4 {
 }
 
 @media only screen and (max-width: 380px) {
+  .mainBlog button {
+    margin-left: 65%;
+  }
   .imgBlog {
-    display: inherit;
     height: 14rem;
     width: auto;
     padding: 1rem;
@@ -1432,9 +1525,9 @@ h4 {
 }
 
 .mainQuienSoy {
-  width: 90%;
+  width: 96%;
   height: auto;
-  margin: 1rem 5%;
+  margin: 1rem 2%;
 }
 
 .mainQuienSoy section {
@@ -1463,6 +1556,9 @@ h4 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mainQuienSoy section .biografia .contBiografia .imgBiografia {
@@ -1480,14 +1576,19 @@ h4 {
 }
 
 .mainQuienSoy section .biografia .contBiografia p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 2rem;
+}
+
+.mainQuienSoy section .biografia .contBiografia p strong, .mainQuienSoy section .biografia .contBiografia p em {
+  font-size: 1.2rem;
 }
 
 .mainQuienSoy section .biografia .contBiografia p a {
   text-decoration: none;
   color: #129399;
   font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .mainQuienSoy section .biografia .contBiografia p a:hover {
@@ -1508,17 +1609,21 @@ h4 {
 }
 
 .mainQuienSoy section .hobbies p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.mainQuienSoy section .hobbies p strong, .mainQuienSoy section .hobbies p em {
+  font-size: 1.2rem;
 }
 
 .mainQuienSoy section .hobbies ul li {
   list-style: circle;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .mainQuienSoy section .hobbies .galeria {
-  width: 95%;
+  width: 96%;
   height: auto;
   margin: auto;
   display: -ms-grid;
@@ -1754,7 +1859,7 @@ h4 {
 }
 
 .mainContacto #contacto #edad {
-  width: 10%;
+  width: 20%;
 }
 
 .mainContacto #contacto #consulta {
@@ -1791,7 +1896,7 @@ h4 {
     border-radius: 1.5rem;
   }
   .mainContacto #contacto #edad {
-    width: 15%;
+    width: 25%;
   }
   .mainContacto #contacto #consulta {
     width: 90%;
@@ -1812,25 +1917,11 @@ h4 {
   .mainContacto #contacto {
     width: 40%;
   }
-  .mainContacto #contacto label {
-    font-size: 1rem;
-  }
   .mainContacto #contacto input {
-    width: 90%;
     border-radius: 1.3rem;
-  }
-  .mainContacto #contacto #edad {
-    width: 15%;
   }
   .mainContacto #contacto #consulta {
-    width: 90%;
     border-radius: 1.3rem;
-  }
-  .mainContacto #contacto .botonEnviar, .mainContacto #contacto .botonBorrar {
-    font-size: 1rem;
-  }
-  .mainContacto #contacto .botonBorrar {
-    margin: 0;
   }
 }
 
@@ -1896,7 +1987,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   margin-left: 10rem;
   margin-right: 1rem;
 }

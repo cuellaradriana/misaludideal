@@ -8,7 +8,8 @@
         font-family: 'Amaranth', sans-serif;
     }
     button{
-        margin-left: 80%;
+        margin-left: 83%;
+        margin-bottom: $size1;
         border: 1px solid $color3;
         background-color: $color6;
         text-decoration: none;
@@ -19,12 +20,12 @@
         }
     }
     section{
-        h2{
+            .tituloBlog{
             margin-bottom: $size1;
             font-family: 'Amaranth', sans-serif;
             color: $color4;
             text-shadow: .1rem .1rem .1rem $color5;
-            font-size: $size3;
+            font-size: $size2;
             text-align: center;
         }
         p{
@@ -45,15 +46,15 @@
             }
             .item1{
                 background-image: url('../imágenes/barriguita_llena.jpg');
-                width: $supersize*2.5;
+                width: 100%;
             }
             .item2{
                 background-image: url('../imágenes/leer_etiquetas.jpg');
-                width: $supersize*4;
+                width: 100%;
             }
             .item3{
                 background-image: url('../imágenes/lista_de_super.jpg');
-                width: $supersize*5;
+                width: 150%;
             }
         }
         .contenedorReverso{
@@ -66,13 +67,7 @@
                 margin-bottom: 5px;
                 color: $color5;
             }
-            .avena{
-                display: flex;
-            }
-            .huevos{
-                display: flex;
-            }
-            .lentejas{
+            .avena, .huevos, .lentejas{
                 display: flex;
             }
         }
@@ -82,17 +77,9 @@
     width: 25%;
 }
 
-.composicion{
+.composicion, .beneficios, .usos{
     width: 25%;
     margin-left:2%;
-}
-.beneficios{
-    width: 25%;
-    margin-left: 2%;
-}
-.usos{
-    width: 25%;
-    margin-left: 2%;
 }
 h4{
     font-family: 'Amaranth', sans-serif;
@@ -109,8 +96,13 @@ h4{
         margin-right: 1%;
         font-size: $size1;
         section{
-            h2{
-                margin-bottom: .5rem;
+            .contenedorBlogSuper{
+                .item2{
+                    width: 150%;
+                }
+                .item3{
+                    width: 200%;
+                }
             }
             p{
                 margin-bottom: .5rem;
@@ -126,34 +118,37 @@ h4{
         width: 28%;
     }
     
-    .composicion{
+    .composicion, .beneficios, .usos{
         width: 24%;
         margin-left:1%;
-    }
-    .beneficios{
-        width: 24%;
-        margin-left: 1%;
-    }
-    .usos{
-        width: 24%;
-        margin-left: 1%;
     }
     h4{
         font-size: $size3/2;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 900px){
     .mainBlog{
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
         font-size: $size1*0.8;
+        button{
+            margin-left: 80%;
+        }
         section{
-            h2{
-                margin-bottom: 0;
-                font-size: $size3/2;
-                text-align: center;
-                padding: 0;
+            .contenedorBlogSuper{
+                .item1{
+                    width: 150%;
+                }
+                .item2{
+                    width: 220%;
+                }
+                .item3{
+                    width: 270%;
+                }
+            }
+            .tituloBlog{
+                font-size: 1.8rem;
             }
             p{
                 margin-bottom: $size1/2;
@@ -162,13 +157,7 @@ h4{
                 h3{
                     font-size: $size3/2;
                 }
-                .avena{
-                    justify-content: space-evenly;
-                }
-                .huevos{
-                    justify-content: space-evenly;
-                }
-                .lentejas{
+                .avena, .huevos, .lentejas{
                     justify-content: space-evenly;
                 }
             }
@@ -178,14 +167,117 @@ h4{
         }
     }
     .imgBlog{
-        width: 31%;
         display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mainBlog{
+        margin-top: 0;
+        font-size: $size1*0.8;
+        section{
+            .contenedorBlogSuper{
+                .imgBlogSuper{
+                    height: 10rem;
+                }
+                .item2{
+                    width: 160%;
+                }
+                .item3{
+                    width: 200%;
+                }
+            }
+            .tituloBlog{
+                font-size: $size3/2;
+            }
+            p{
+                margin-bottom: $size1/2;
+            }
+            article{
+                h3{
+                    font-size: $size3/2;
+                    margin-left: .5rem;
+                    text-align: center;
+                    text-shadow: 1px 1px 2px $color4;
+                    font-weight: bolder;
+                }
+                .avena, .huevos, .lentejas{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+        h4{
+            font-size: $size1;
+        }
+    }
+    .imgBlog{
+        display: block;
+        width: 80%;
+    }
+    .composicion, .beneficios, .usos{
+        width: 100%;
+        padding: $size1;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .mainBlog{
+        button{
+            margin-left: 70%;
+        }
+        section{
+            .contenedorBlogSuper{
+                .imgBlogSuper{
+                    height: 10rem;
+                }
+                .item2{
+                    width: 250%;
+                }
+                .item3{
+                    width: 300%;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 480px){
     .mainBlog{
         font-size: $size1*0.8;
+        button{
+            margin-left: 68%;
+        }
         section{
+            .contenedorBlogSuper{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                p{
+                    position: relative;
+                    z-index: 10;
+                }
+                .imgBlogSuper{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    opacity: .3;
+                }
+                .item1{
+                    width: 12rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .item2{
+                    width: 15rem;
+                    height: 15rem;
+                }
+                .item3{
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
             h2{
                 font-size: $size3/2;
                 text-align: center;
@@ -197,17 +289,14 @@ h4{
                 .avena{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                 }
                 .huevos{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                 }
                 .lentejas{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                 }
             }
         }
@@ -236,12 +325,17 @@ h4{
     }
 }
 @media only screen and (max-width: 380px){
+    .mainBlog{
+        button{
+            margin-left: 65%;
+        }
+    }
     .imgBlog{
-        display: inherit;
         height: $size2*7;
         width: auto;
         padding: $size1;
         padding-bottom: 0;
     }
 }
+
 

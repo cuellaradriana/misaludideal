@@ -34,3 +34,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 650px){
+    .mainRecetasPrincipal{
+        flex-direction: column;
+        .card{
+            width: 90%;
+            margin: auto;
+            margin-bottom: $size1;
+        }
+    }
+}

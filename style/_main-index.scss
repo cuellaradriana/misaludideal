@@ -9,7 +9,6 @@
         margin: auto;
         margin-top: $size1;
         background-color: $color8;
-        // box-shadow: .1rem .1rem .5rem $marron;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -63,7 +62,6 @@
         .artMain{
             width: 50%;
             margin: $size1/2;
-            // border: 1px solid $turquesa;
             box-shadow: .2rem .2rem $size1/2 darkgray;
             h2{
                 margin-bottom: $size1;
@@ -75,6 +73,7 @@
             }
             .artFormato{
                 display: flex;
+                justify-content: center;
                 .imgArt{
                     height: $size1*12.5;
                     margin: $size1/2;
@@ -93,23 +92,32 @@
                         margin-bottom: $size1;
                         margin-top: $size1;
                     }              
-                    .ingReceta{
+                    .ingReceta li{
                         font-size: $size1*1.2;
+                        list-style-position: outside;
                     }
-                }
+                } 
             }
             h3.prep{
                 margin-left: 10px;
+                font-family: 'Amaranth', sans-serif;
+                color: $color5;
                 font-weight: bolder;
-            }
+                font-size: $size1*1.8;
+                text-align: left;
+            } 
             .textoArt{
                 margin: $size1;
                 margin-top: 0;
                 font-size: $size1*1.2;
                 text-align: left;
+                em{
+                    font-size: $size1*1.2;
+                }
                 a{
                     text-decoration: none;
                     color: $color5;
+                    font-size: $size1*1.2;
                     font-family: 'Amaranth', sans-serif;
                     transition: .5s;
                 }

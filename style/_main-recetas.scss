@@ -1,5 +1,5 @@
 .mainRecetas{
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: $size1*1.5 auto;
     .tituloReceta{
@@ -142,7 +142,7 @@
     }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 600px){
     .mainRecetas{
         .tituloReceta{
             font-size: $size2*1.5;
@@ -162,6 +162,11 @@
                 ul{
                     li{
                         font-size: $size1;
+                    }
+                }
+                .ingReceta{
+                    li{
+                        font-size: $size1
                     }
                 }
             }
