@@ -19,7 +19,7 @@
             grid-area: titulo;
             margin: $size1;
             text-align: center;
-            font-size: $size2*1.5;
+            font-size: $size2;
             font-family: 'Dancing Script', cursive;
             font-weight: bolder;
         }
@@ -54,6 +54,7 @@
             height: 40vh;
             border-radius: 30%;
             margin: auto;
+            margin-right: $size1;
         }
     }
     .contMain{
@@ -87,13 +88,13 @@
                         font-family: 'Amaranth', sans-serif;
                         color: $color5;
                         font-weight: bolder;
-                        font-size: $size1*1.8;
+                        font-size: $size1*1.6;
                         text-align: left;
                         margin-bottom: $size1;
                         margin-top: $size1;
                     }              
                     .ingReceta li{
-                        font-size: $size1*1.2;
+                        font-size: $size1;
                         list-style-position: outside;
                     }
                 } 
@@ -109,15 +110,15 @@
             .textoArt{
                 margin: $size1;
                 margin-top: 0;
-                font-size: $size1*1.2;
+                font-size: $size1;
                 text-align: left;
                 em{
-                    font-size: $size1*1.2;
+                    font-size: $size1;
                 }
                 a{
                     text-decoration: none;
                     color: $color5;
-                    font-size: $size1*1.2;
+                    font-size: $size1;
                     font-family: 'Amaranth', sans-serif;
                     transition: .5s;
                 }
@@ -176,9 +177,18 @@
                         h3{
                             font-size: $size3/2;
                         }              
-                        .ingReceta{
-                            font-size: $size1*1.2;
+                        .ingReceta li{
+                            font-size: 1.3rem;
                         }
+                    }
+                }
+                .textoArt{
+                    font-size: 1.3rem;
+                    em{
+                        font-size: 1.3rem;
+                    }
+                    a{
+                        font-size: 1.3rem;
                     }
                 }
                 h3.prep{
@@ -211,32 +221,65 @@
             .textoAutor{
                 font-size: $size1*0.8;
             }
+            .botonAutor{
+                padding: $size1*0.3 $size1/2;
+                font-size: $size1*0.8;
+                border-radius: $size1;
+            }
         }
         .contMain{
-            display: flex;
-            flex-direction: column;
             .artMain{
-                width: 90%;
-                margin: auto;
+                .artFormato{
+                    .artReceta{
+                        margin-left: $size2;              
+                        .ingReceta li{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .textoArt{
+                    font-size: 1.1rem;
+                    em{
+                        font-size: 1.1rem;
+                    }
+                    a{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .segundoArt{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .mainIndex{
+        .contMain{
+            flex-direction: column;
+            margin-top: 0;
+            .artMain{
+                box-shadow: inherit;
+                width: 100%;
                 h2{
-                    padding-top: $size1;
+                    margin-bottom: $size1;
                     font-size: $size3/2;
-                    text-shadow: inherit;
-                    font-weight: bolder;
                 }
                 .artFormato{
                     display: flex;
-                    justify-content: center;
+                    flex-direction: column;
                     .imgArt{
-                        height: $supersize
+                        height: auto;
+                        width: 90%;
+                        margin-left: $size2;
+                        margin-right: $size2;
+                        padding: $size1/3;
                     }
                     .artReceta{
                         display: flex;
                         flex-direction: column;
-                        margin-left: $size2;  
-                        h3{
-                            font-size: $size1;
-                        }              
+                        margin-left: $size1;                
                         .ingReceta{
                             font-size: $size1;
                         }
@@ -244,13 +287,10 @@
                 }
                 .textoArt{
                     font-size: $size1;
-                    margin-left: $size2;
+                    margin-left: $size3/2;
                 }
             }
         }
-    }
-    .segundoArt{
-        padding-top: 0;
     }
 }
 
@@ -276,6 +316,8 @@
             }
             .imgAutor{
                 height: 28vh;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
         .contMain{
@@ -287,28 +329,6 @@
                 h2{
                     margin-bottom: $size1;
                     font-size: $size3/2;
-                }
-                .artFormato{
-                    display: flex;
-                    flex-direction: column;
-                    .imgArt{
-                        height: $size3*6;
-                        margin-left: $size2;
-                        margin-right: $size2;
-                        padding: $size1/3;
-                    }
-                    .artReceta{
-                        display: flex;
-                        flex-direction: column;
-                        margin-left: $size1;                
-                        .ingReceta{
-                            font-size: $size1;
-                        }
-                    }
-                }
-                .textoArt{
-                    font-size: $size1;
-                    margin-left: $size3/2;
                 }
             }
         }
